@@ -1,0 +1,186 @@
+# PL-300 Objectives Checklist
+
+This checklist is based on the main skills measured in the PL-300 exam.  
+Use it to track what you’ve really *mastered*, not just watched once 😉
+
+---
+
+## Overall Progress
+
+- [ ] I can load data into Power BI and clean it on my own
+- [ ] I can build a proper data model with relationships and DAX measures
+- [ ] I can create clear, interactive reports that answer business questions
+- [ ] I understand the basics of Power BI Service, sharing, and security
+- [ ] I feel ready to do a full practice exam without looking things up
+
+---
+
+## 1. Prepare the data
+
+### 1.1 Get data from different sources
+
+- [ ] Connect to Excel files
+- [ ] Connect to CSV / text files
+- [ ] Connect to a database (e.g. SQL Server)
+- [ ] Understand DirectQuery vs Import mode (high-level)
+- [ ] Combine data from multiple sources into one model
+
+### 1.2 Clean, transform and load data (Power Query)
+
+- [ ] Change column data types
+- [ ] Filter rows (remove blanks, remove errors, etc.)
+- [ ] Split columns (by delimiter, by number of characters)
+- [ ] Merge columns
+- [ ] Remove and rename columns
+- [ ] Use “Use first row as headers”
+- [ ] Handle nulls and errors (replace/remove)
+- [ ] Sort data
+- [ ] Create conditional columns
+- [ ] Merge queries (join tables)
+- [ ] Append queries (stack tables)
+- [ ] Understand query steps and how to edit/delete them
+- [ ] Load data to the model (Close & Apply)
+
+### 1.3 Profile data
+
+- [ ] Use column quality, distribution, and profile in Power Query
+- [ ] Identify outliers or strange values
+- [ ] Check for duplicates
+- [ ] Understand basic data quality issues (missing values, inconsistent formats)
+
+---
+
+## 2. Model the data
+
+### 2.1 Design and build a model
+
+- [ ] Understand star schema (fact vs dimension tables)
+- [ ] Identify keys (primary/foreign) for relationships
+- [ ] Create relationships between tables
+- [ ] Understand relationship cardinality (1:*, *:*)
+- [ ] Understand cross filter direction (single, both)
+- [ ] Hide technical columns from report view
+- [ ] Organize fields into display folders (optional but nice)
+
+### 2.2 DAX – calculated columns & measures
+
+- [ ] Know the difference between:
+  - [ ] Calculated column
+  - [ ] Measure
+- [ ] Create basic calculated columns
+- [ ] Create basic measures:
+  - [ ] `SUM`
+  - [ ] `COUNT` / `COUNTROWS`
+  - [ ] `AVERAGE`
+- [ ] Use `CALCULATE` to change filter context
+- [ ] Use `FILTER` in a measure
+- [ ] Use `RELATED` / `RELATEDTABLE`
+- [ ] Understand row context vs filter context (in simple terms)
+
+### 2.3 Time intelligence (basic)
+
+- [ ] Have a proper date table in the model
+- [ ] Mark date table as “Date table”
+- [ ] Create measures like:
+  - [ ] Year-to-Date (YTD)
+  - [ ] Month-to-Date (MTD)
+  - [ ] Same period last year
+- [ ] Build visuals comparing this year vs last year
+
+### 2.4 Optimize the model
+
+- [ ] Remove unnecessary columns
+- [ ] Disable auto-date/time (or understand its impact)
+- [ ] Understand basics of model performance (high level)
+
+---
+
+## 3. Visualize and analyze the data
+
+### 3.1 Create reports and visuals
+
+- [ ] Add and format:
+  - [ ] Bar/Column charts
+  - [ ] Line charts
+  - [ ] Tables
+  - [ ] Matrix
+  - [ ] Cards / KPIs
+  - [ ] Pie/Donut charts (and when NOT to overuse them)
+- [ ] Use slicers (single-select, multi-select)
+- [ ] Use filters:
+  - [ ] Visual-level filters
+  - [ ] Page-level filters
+  - [ ] Report-level filters
+- [ ] Use drilldown and expand in visuals
+
+### 3.2 Interactivity & navigation
+
+- [ ] Create drillthrough pages
+- [ ] Add tooltips for extra info
+- [ ] Use bookmarks for custom views
+- [ ] Add buttons for navigation (home/back/report sections)
+- [ ] Build a simple multi-page report that feels like a small app
+
+### 3.3 Format & make it readable
+
+- [ ] Use consistent colors and fonts
+- [ ] Rename visuals and fields so they are clear to the user
+- [ ] Use conditional formatting (e.g. color by value)
+- [ ] Sort by other columns when needed (e.g. months in correct order)
+- [ ] Add titles, labels, and descriptions where needed
+
+### 3.4 Analyze data
+
+- [ ] Use “Analyze” features (Explain increase/decrease, where available)
+- [ ] Add quick measures (high-level understanding)
+- [ ] Answer concrete business questions with your report
+  (e.g. best customers, worst region, trend over time)
+
+---
+
+## 4. Manage and secure Power BI
+
+### 4.1 Work with Power BI Service
+
+- [ ] Publish a report from Power BI Desktop to Power BI Service
+- [ ] Understand:
+  - [ ] Workspaces
+  - [ ] Datasets
+  - [ ] Reports
+  - [ ] Dashboards
+  - [ ] Apps (high-level)
+- [ ] Pin visuals to a dashboard
+- [ ] Refresh a dataset manually
+
+### 4.2 Data refresh & gateways
+
+- [ ] Understand scheduled refresh (daily, hourly, etc.)
+- [ ] Know what a gateway is (on-premises data)
+- [ ] Know when you need a gateway (high-level concept)
+
+### 4.3 Row-Level Security (RLS)
+
+- [ ] Create roles in Power BI Desktop
+- [ ] Define DAX filters for RLS (e.g. `[Region] = "West"`)
+- [ ] Test roles with “View as role”
+- [ ] Publish with RLS and assign users to roles in the Service
+
+### 4.4 Sharing & permissions
+
+- [ ] Share a report/dashboard with a specific user (high level)
+- [ ] Know the difference between:
+  - [ ] Viewer vs Member vs Contributor in a workspace (conceptually)
+- [ ] Understand basic licensing concepts (Pro vs Free – very high level)
+
+---
+
+## 5. Exam readiness
+
+- [ ] I have read the official PL-300 skills outline at least once
+- [ ] I have done at least one full practice assessment
+- [ ] I reviewed every wrong answer and know *why* it was wrong
+- [ ] I built at least 2–3 small end-to-end projects in Power BI (from data to report)
+- [ ] I am comfortable navigating the exam UI (question types, mark for review, etc.)
+- [ ] I can explain my model and reports as if I’m talking to a manager
+
+When most of these items are checked, you’re probably very close to being ready for the exam 💪
