@@ -4,19 +4,19 @@ Day 1 notes
 
 ---
 
-### Step 1.1 - Excel connection
+### Step 1.1.1 - Excel connection
 - Connected to sales.xlsx via Get data > Excel.
 - Checked and fixed data types in Power Query.
 
 ---
 
-### Step 1.2 - CSV connection
+### Step 1.1.2 - CSV connection
 - Created and imported customers.csv via Get data > Text/CSV.
 - Adjusted data types in Power Query.
 
 ---
 
-### Step 1.3 – Combining multiple sources in one model
+### Step 1.1.3 – Combining multiple sources in one model
 
 #### What I did
 - Loaded `sales.xlsx` from Excel as table **sales**.
@@ -42,7 +42,7 @@ Day 1 notes
 
 ---
 
-### Step 4 – Relational data sources (SQL Server)
+### Step 1.1.4 – Relational data sources (SQL Server)
 
 #### What I read
 - Relational data sources are databases like SQL Server, Azure SQL Database, etc.
@@ -64,6 +64,36 @@ Day 1 notes
 - Relational sources are structured tables with relationships.
 - Power BI connects to them via the SQL Server connector.
 - I now know where to choose Import vs DirectQuery when connecting.
+
+---
+
+### Step 1.1.5 – Storage mode: Import vs DirectQuery
+
+#### What I read
+- Power BI can use different storage modes when connecting to data sources:
+  - **Import**: data is copied into the Power BI model (.pbix file).
+  - **DirectQuery**: data stays in the source and Power BI queries it live.
+- The storage mode is selected in the connector dialog (e.g. SQL Server) under **Data connectivity mode**.
+
+#### What I did in Power BI
+- Opened **Get data > SQL Server** in Power BI Desktop.
+- Looked at the **Data connectivity mode** options:
+  - Import
+  - DirectQuery
+- (Optional if true) Connected to a database using Import mode and loaded one table.
+
+#### What I learned (in my own words)
+- **Import** mode:
+  - Copies the data into the .pbix file.
+  - Usually faster and supports more DAX and modeling features.
+  - Needs a refresh to see new data.
+- **DirectQuery** mode:
+  - Leaves the data in the source (e.g. SQL Server).
+  - Each interaction sends a query to the source.
+  - Better for very large or near real-time datasets.
+  - Has more limitations and depends on the performance of the source.
+- For most “normal” Power BI reports, **Import** is the default/best choice.
+- For huge or real-time datasets, **DirectQuery** can be useful, but comes with trade-offs.
 
 ---
 
