@@ -52,10 +52,10 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 1.1 Get data from different sources
 
-- [ ] Connect to Excel files
-- [ ] Connect to CSV / text files
+- [X] Connect to Excel files
+- [X] Connect to CSV / text files
 - [ ] Connect to a database (e.g. SQL Server)
-- [ ] Understand DirectQuery vs Import mode (high-level)
+- [X] Understand DirectQuery vs Import mode (high-level)
 - [ ] Combine data from multiple sources into one model
 
 ### 1.2 Clean, transform and load data (Power Query)
