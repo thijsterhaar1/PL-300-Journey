@@ -15,6 +15,39 @@ Use it to track what you’ve really *mastered*, not just watched once 😉
 
 ---
 
+## Project milestones & timing
+
+Use these milestones to decide **when** to build (or upgrade) a project.  
+Rough idea: after 1–2 study sessions on a topic → do a small project.
+
+- [ ] **Mini Project 1 – Data Cleaning**
+  - Target timing: after you’ve done basic *Prepare the data* modules.
+  - Build a small report from a single Excel/CSV source.
+  - Use Power Query to clean data (remove columns, fix data types, filter rows).
+
+- [ ] **Project 2 – Sales Model v1**
+  - Target timing: after you’ve learned basic relationships and simple DAX.
+  - Create a model with multiple tables (e.g. Sales, Customers, Products).
+  - Add basic measures (`SUM`, `COUNT`, simple `CALCULATE`) and a few core visuals.
+
+- [ ] **Project 3 – Sales Dashboard v2 (Insights)**
+  - Target timing: after you’ve covered *Visualize & analyze the data* basics.
+  - Take Project 2 and upgrade it:
+    - Add slicers, drillthrough, tooltips, cards/KPIs.
+    - Focus on answering concrete questions (best month, best customer, etc.).
+
+- [ ] **Project 4 – Alternative Scenario Report**
+  - Target timing: after you’re comfortable with several visuals and filters.
+  - Use a different dataset (customers, marketing, operations… anything).
+  - Focus on variety: matrix, line charts, conditional formatting, sorting, etc.
+
+- [ ] **Project 5 – Published Report with RLS**
+  - Target timing: after you’ve studied *Manage & secure Power BI*.
+  - Publish one of your existing projects to Power BI Service.
+  - Set up Row-Level Security (RLS) and test with “View as role”.
+
+---
+
 ## 1. Prepare the data
 
 ### 1.1 Get data from different sources
