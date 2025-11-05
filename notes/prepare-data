@@ -1,4 +1,69 @@
 # Prepare the data – notes
 
-- Connected to sample Excel file
-- Practiced filtering and changing data types
+Day 1 notes
+
+---
+
+### Excel connection (Step 1)
+- Connected to sales.xlsx via Get data > Excel.
+- Checked and fixed data types in Power Query.
+
+---
+
+### CSV connection (Step 2)
+- Created and imported customers.csv via Get data > Text/CSV.
+- Adjusted data types in Power Query.
+
+---
+
+### Step 3 – Combining multiple sources in one model
+
+#### What I did
+- Loaded `sales.xlsx` from Excel as table **sales**.
+- Loaded `customers.csv` as table **customers_pl300**.
+- Created a relationship:
+  - customers_pl300[Region] (1-side)
+  - sales[Region] (*-side)
+  - Cross filter direction: Both
+  - Relationship is active.
+- Built a bar/column chart:
+  - X-axis: **customers_pl300[Region]**
+  - Y-axis: **Sum of sales[Quantity]**
+
+#### What I noticed & fixed
+- At first, every bar showed **6** (the total Quantity), no matter the region.
+- This happened because there was **no active relationship** between the tables, so the Region filter didn’t reach the sales table.
+- After creating the proper relationship, each region now shows its **own** Sum of Quantity.
+
+#### What I learned
+- Power BI can combine data from different sources (Excel + CSV) in one model using relationships.
+- Without a relationship, filters on one table don’t affect measures from another table.
+- A correct one-to-many relationship is essential for accurate visuals.
+
+---
+
+### Step 4 – Relational data sources (SQL Server)
+
+#### What I read
+- Relational data sources are databases like SQL Server, Azure SQL Database, etc.
+- In Power BI I can connect to them using:
+  - Server name
+  - (Optional) database name
+  - Credentials / authentication
+- After connecting, I can select tables or write queries to load data.
+
+#### What I did in Power BI
+- Opened Get data > SQL Server in Power BI Desktop.
+- Looked at the SQL Server connection dialog:
+  - Server
+  - Database (optional)
+  - Data connectivity mode: Import or DirectQuery.
+- (No real database yet, just explored the dialog.)
+
+#### What I learned
+- Relational sources are structured tables with relationships.
+- Power BI connects to them via the SQL Server connector.
+- I now know where to choose Import vs DirectQuery when connecting.
+
+---
+
