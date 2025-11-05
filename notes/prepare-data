@@ -4,19 +4,19 @@ Day 1 notes
 
 ---
 
-### Excel connection (Step 1)
+### Step 1.1 - Excel connection
 - Connected to sales.xlsx via Get data > Excel.
 - Checked and fixed data types in Power Query.
 
 ---
 
-### CSV connection (Step 2)
+### Step 1.2 - CSV connection
 - Created and imported customers.csv via Get data > Text/CSV.
 - Adjusted data types in Power Query.
 
 ---
 
-### Step 3 – Combining multiple sources in one model
+### Step 1.3 – Combining multiple sources in one model
 
 #### What I did
 - Loaded `sales.xlsx` from Excel as table **sales**.
