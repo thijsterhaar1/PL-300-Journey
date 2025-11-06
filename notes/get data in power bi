@@ -1,22 +1,20 @@
-# Prepare the data – notes
-
-Day 1 notes
+# get data in power bi – notes
 
 ---
 
-### Step 1.1.1 - Excel connection
+### Step 1 - Excel connection
 - Connected to sales.xlsx via Get data > Excel.
 - Checked and fixed data types in Power Query.
 
 ---
 
-### Step 1.1.2 - CSV connection
+### Step 2 - CSV connection
 - Created and imported customers.csv via Get data > Text/CSV.
 - Adjusted data types in Power Query.
 
 ---
 
-### Step 1.1.3 – Combining multiple sources in one model
+### Step 3 – Combining multiple sources in one model
 
 #### What I did
 - Loaded `sales.xlsx` from Excel as table **sales**.
@@ -42,7 +40,7 @@ Day 1 notes
 
 ---
 
-### Step 1.1.4 – Relational data sources (SQL Server)
+### Step 4 – Relational data sources (SQL Server)
 
 #### What I read
 - Relational data sources are databases like SQL Server, Azure SQL Database, etc.
@@ -67,7 +65,7 @@ Day 1 notes
 
 ---
 
-### Step 1.1.5 – Storage mode: Import vs DirectQuery
+### Step 5 – Storage mode: Import vs DirectQuery
 
 #### What I read
 - Power BI can use different storage modes when connecting to data sources:
