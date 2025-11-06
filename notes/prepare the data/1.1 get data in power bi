@@ -95,3 +95,22 @@
 
 ---
 
+### Step 6 – Checkpoint for 1.1 (Get data)
+
+#### What I did
+- Worked through the **“Get data in Power BI”** exercise in Microsoft Learn.
+- Used the starter report (`01-Starter-Sales Analysis.pbix`) in the lab environment.
+- Practised:
+  - Connecting to data sources from Power BI (files and SQL Server in the lab).
+  - Loading tables into the model.
+  - Opening Power Query from an existing report and reviewing the query steps.
+- Completed the **“Check your knowledge”** quiz for this module.
+
+#### What I learned
+- I can now connect to:
+  - Excel files
+  - CSV / text files
+  - A relational database (conceptually and in the lab environment).
+- I understand where to choose **Import** vs **DirectQuery** (Data connectivity mode).
+- I know how to combine tables from different sources into one model using relationships.
+- Overall, I feel comfortable with the **“Get data from different sources”** part of PL-300.
