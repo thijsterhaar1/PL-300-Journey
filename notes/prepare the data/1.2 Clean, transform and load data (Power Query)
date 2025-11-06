@@ -9,4 +9,28 @@
 
 ---
 
+### Step 1 – Basic shaping (shape the initial data)
+
+#### What I read
+- “Shape the initial data” module: using Power Query to clean up and organize tables.
+- Learned about:
+  - Using the first row as headers
+  - Removing and renaming columns
+  - Filtering and sorting rows
+  - Applied steps list
+
+#### What I did in Power Query
+- Used **Use first row as headers** on my sales table (if needed).
+- Removed unnecessary columns.
+- Renamed columns to more meaningful names (e.g. Date -> OrderDate).
+- Filtered rows (e.g. removed null regions / filtered out specific values).
+- Sorted the table by one or more columns.
+- Reviewed the **Applied steps** pane to see each transformation.
+
+#### What I learned
+- Basic shaping operations (remove/rename/sort/filter) create separate steps in the query.
+- I can always click a step to see the state of the data at that point.
+
+---
+
 
