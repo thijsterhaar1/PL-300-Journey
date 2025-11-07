@@ -69,8 +69,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 - [X] Handle nulls and errors (replace/remove)
 - [X] Sort data
 - [X] Create conditional columns
-- [ ] Merge queries (join tables)
-- [ ] Append queries (stack tables)
+- [X] Merge queries (join tables)
+- [X] Append queries (stack tables)
 - [ ] Understand query steps and how to edit/delete them
 - [ ] Load data to the model (Close & Apply)
 
