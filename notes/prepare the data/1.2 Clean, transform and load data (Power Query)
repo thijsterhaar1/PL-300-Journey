@@ -33,4 +33,26 @@
 
 ---
 
+### Step 2 – Split and merge columns
+
+#### What I did in Power Query
+- In the **sales** table:
+  - Selected the Region and Product columns and used **Transform > Merge columns**
+    - Separator: " - "
+    - New column name: Region-Product
+  - Then selected Region-Product and used **Transform > Split column > By delimiter**
+    - Delimiter: " - "
+    - Resulted in two columns which I renamed back to Region and Product.
+- Created a small demo table (DemoSplit) with a YearMonth column (e.g. 202401, 202402, 202403).
+  - Used **Transform > Split column > By number of characters**
+    - Split after 4 characters into Year and Month.
+
+#### What I learned
+- **Merge columns** combines multiple text columns into one using a separator.
+- **Split column by delimiter** splits a text column into multiple columns based on a character like "-" or ",".
+- **Split column by number of characters** splits a text field at a fixed position (e.g. YYYYMM → YYYY + MM).
+- Every split/merge operation becomes its own step in the Applied steps list.
+
+---
+
 
