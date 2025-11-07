@@ -77,3 +77,47 @@
 - Each change (type change, filter, replace, remove errors) becomes its own step in Applied steps.
 
 ---
+
+### Step 4 – Conditional columns
+
+#### What I did in Power Query
+- Opened the **sales** query.
+- Used **Add Column > Conditional Column** to create:
+  - `OrderSize`:
+    - If Quantity > 3 then "Large"
+    - Else "Normal"
+- (Optional) Created another conditional column based on Region.
+
+#### What I learned
+- Conditional columns let me apply simple IF/THEN logic during data preparation.
+- The result is a new column that is calculated at refresh time (not a DAX measure).
+- The conditional column step appears in the Applied steps list and can be edited later.
+
+---
+
+### Step 5 – Merge and append queries
+
+#### Merge queries (join)
+- Used **Home > Merge queries as new** with:
+  - First table: sales
+  - Second table: customers_pl300
+  - Join key: Region (same field in both tables)
+  - Join kind: Left Outer (all from sales, matching from customers_pl300)
+- Expanded the merged column to bring in customer fields (e.g. CustomerName, Region).
+- Renamed the new query to `sales_merged_customers`.
+
+#### Append queries (stack)
+- Duplicated the `sales` query and renamed it to `sales_extra`.
+- Changed some values in `sales_extra` to simulate additional rows.
+- Used **Home > Append queries as new**:
+  - Table 1: sales
+  - Table 2: sales_extra
+- Renamed the result to `sales_all`, which now contains rows from both tables.
+
+#### What I learned
+- **Merge** = join tables side by side using a key column (adds columns).
+- **Append** = stack tables with the same structure on top of each other (adds rows).
+- Both operations create their own steps in the Applied steps list.
+
+---
+
