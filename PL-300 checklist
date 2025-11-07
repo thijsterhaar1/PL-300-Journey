@@ -66,9 +66,9 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 - [X] Merge columns
 - [X] Remove and rename columns
 - [X] Use “Use first row as headers”
-- [ X ] Handle nulls and errors (replace/remove)
+- [X] Handle nulls and errors (replace/remove)
 - [X] Sort data
-- [ ] Create conditional columns
+- [X] Create conditional columns
 - [ ] Merge queries (join tables)
 - [ ] Append queries (stack tables)
 - [ ] Understand query steps and how to edit/delete them
