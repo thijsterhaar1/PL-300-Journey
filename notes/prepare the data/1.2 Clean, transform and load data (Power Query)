@@ -55,4 +55,25 @@
 
 ---
 
+### Step 3 – Data types, nulls and errors
 
+#### What I did in Power Query
+- Reviewed and corrected data types:
+  - Dates set to **Date**
+  - Quantity to **Whole number**
+  - Price/Amount to **Decimal number**
+  - Text columns (Product, Region, CustomerName) to **Text**
+- Handled null values:
+  - Filtered out nulls in one column.
+  - Used **Replace values** to replace null/blank values with "Unknown" (or 0).
+- Practised working with errors:
+  - Forced errors by converting a text column to Whole number.
+  - Used **Remove errors** to delete error rows.
+  - (Optionally) used **Replace errors** to replace error values.
+
+#### What I learned
+- Correct data types are important for calculations and visuals.
+- Nulls and errors can break measures if I don’t handle them.
+- Each change (type change, filter, replace, remove errors) becomes its own step in Applied steps.
+
+---
