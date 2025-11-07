@@ -60,14 +60,14 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 1.2 Clean, transform and load data (Power Query)
 
-- [ ] Change column data types
-- [ ] Filter rows (remove blanks, remove errors, etc.)
-- [ ] Split columns (by delimiter, by number of characters)
-- [ ] Merge columns
-- [ ] Remove and rename columns
-- [ ] Use “Use first row as headers”
+- [X] Change column data types
+- [X] Filter rows (remove blanks, remove errors, etc.)
+- [X] Split columns (by delimiter, by number of characters)
+- [X] Merge columns
+- [X] Remove and rename columns
+- [X] Use “Use first row as headers”
 - [ ] Handle nulls and errors (replace/remove)
-- [ ] Sort data
+- [X] Sort data
 - [ ] Create conditional columns
 - [ ] Merge queries (join tables)
 - [ ] Append queries (stack tables)
