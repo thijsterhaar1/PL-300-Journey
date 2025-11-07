@@ -71,8 +71,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 - [X] Create conditional columns
 - [X] Merge queries (join tables)
 - [X] Append queries (stack tables)
-- [ ] Understand query steps and how to edit/delete them
-- [ ] Load data to the model (Close & Apply)
+- [X] Understand query steps and how to edit/delete them
+- [X] Load data to the model (Close & Apply)
 
 ### 1.3 Profile data
 
