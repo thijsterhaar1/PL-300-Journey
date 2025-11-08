@@ -7,7 +7,7 @@ Use it to track what you’ve really *mastered*, not just watched once 😉
 
 ## Overall Progress
 
-- [ ] I can load data into Power BI and clean it on my own
+- [X] I can load data into Power BI and clean it on my own
 - [ ] I can build a proper data model with relationships and DAX measures
 - [ ] I can create clear, interactive reports that answer business questions
 - [ ] I understand the basics of Power BI Service, sharing, and security
@@ -76,10 +76,10 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 1.3 Profile data
 
-- [ ] Use column quality, distribution, and profile in Power Query
-- [ ] Identify outliers or strange values
-- [ ] Check for duplicates
-- [ ] Understand basic data quality issues (missing values, inconsistent formats)
+- [X] Use column quality, distribution, and profile in Power Query
+- [X] Identify outliers or strange values
+- [X] Check for duplicates
+- [X] Understand basic data quality issues (missing values, inconsistent formats)
 
 ---
 
