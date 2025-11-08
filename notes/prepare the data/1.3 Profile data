@@ -1,1 +1,22 @@
+### Step 1.3 – Profile data
+
+#### What I did in Power Query
+- Turned on profiling in View:
+  - Column quality
+  - Column distribution
+  - Column profile
+  - Set profiling to **Entire data**.
+- Used **Column quality** to see valid/empty/error percentages per column.
+- Used **Column distribution/profile** on numeric columns to:
+  - View min, max, average and histogram.
+  - Spot potential outliers (very high or low values).
+- Checked for duplicates on key columns using:
+  - Distinct vs unique counts in the profile.
+  - **Keep duplicates** (then removed that step again).
+
+#### What I learned
+- Column quality quickly shows missing values and errors.
+- Column distribution/profile helps me see the shape of the data and outliers.
+- Distinct vs unique counts help detect duplicate keys.
+- Profiling is a fast way to understand overall data quality before modeling.
 
