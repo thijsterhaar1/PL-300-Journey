@@ -1,3 +1,62 @@
 # Project 1 – Data Cleaning
 
-WIP – first draft. This project will contain a small Power BI report that loads data from a single Excel/CSV file and cleans it with Power Query.
+Small Power BI project to practise loading and cleaning data from a single Excel file using Power Query.
+
+## Dataset
+
+- File: `project1_sales.xlsx`
+- Example columns:
+  - OrderID
+  - Date
+  - Product
+  - Quantity
+  - UnitPrice
+  - Region
+  - Notes (used for test rows / flags)
+
+The raw data intentionally contains:
+- Blank values
+- A test row
+- Inconsistent values that need to be filtered or fixed
+
+## Cleaning steps (Power Query)
+
+In Power Query I:
+
+1. Loaded the Excel table from `project1_sales.xlsx`.
+2. Used **Use first row as headers** (if needed).
+3. Renamed columns to clear names (OrderID, Date, Product, Quantity, UnitPrice, Region, Notes).
+4. Set correct data types:
+   - OrderID: Whole number
+   - Date: Date
+   - Quantity: Whole number
+   - UnitPrice: Decimal number
+   - Region/Product/Notes: Text
+5. Filtered out bad rows:
+   - Removed rows where `Notes = "test"`.
+   - Removed rows with null Quantity or null Region.
+6. Handled missing values:
+   - Replaced remaining blank Region values with `"Unknown"`.
+7. (Optional) Added a **conditional column**:
+   - `OrderSize`:
+     - If Quantity >= 4 then `"Large"`
+     - Else `"Normal"`.
+
+## Report
+
+The report contains:
+
+- One **table visual** showing:
+  - Date, Product, Region, Quantity, UnitPrice (and OrderSize if used).
+- One **column chart**:
+  - X-axis: Region
+  - Y-axis: Sum of Quantity
+
+This report is mainly to verify that the cleaned data looks correct.
+
+## Learnings
+
+- I can load an Excel file into Power BI and open it in Power Query.
+- I can clean data by renaming columns, setting data types, filtering rows and handling nulls.
+- I can use a conditional column for simple business logic during data preparation.
+- I can build a simple report page to validate the cleaned data.
