@@ -20,7 +20,7 @@ Use it to track what you’ve really *mastered*, not just watched once 😉
 Use these milestones to decide **when** to build (or upgrade) a project.  
 Rough idea: after 1–2 study sessions on a topic → do a small project.
 
-- [ ] **Mini Project 1 – Data Cleaning**
+- [X] **Mini Project 1 – Data Cleaning**
   - Target timing: after you’ve done basic *Prepare the data* modules.
   - Build a small report from a single Excel/CSV source.
   - Use Power Query to clean data (remove columns, fix data types, filter rows).
