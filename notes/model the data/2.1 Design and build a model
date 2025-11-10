@@ -118,3 +118,25 @@
 
 ---
 
+### Step 5 – Cross filter direction (Single vs Both)
+
+#### What I did in Power BI
+- Opened **Model view → Manage relationships**.
+- For all relationships:
+  - Confirmed **Cross filter direction = Single**.
+  - Dimension tables filter FactSales, not the other way around.
+- (Optional test)
+  - Temporarily changed one relationship to **Both** to see how filters propagate further through the model.
+  - Switched it back to **Single** to keep a clean star schema.
+
+#### What I learned
+- **Single** cross filter direction:
+  - Filters flow from the "1" side (dimension) to the "*" side (fact).
+  - This is the **recommended default** for star schemas.
+- **Both** cross filter direction:
+  - Filters can flow in both directions.
+  - Can be useful in special scenarios (e.g., when two dimensions need to filter each other via a fact).
+  - Increases risk of ambiguous relationships and unexpected filter behavior.
+- Best practice for PL-300:
+  - Use **Single** for dimension → fact in a star schema.
+  - Use **Both** only when there is a clear, justified scenario and you understand the impact.
