@@ -88,7 +88,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 ### 2.1 Design and build a model
 
 - [X] Understand star schema (fact vs dimension tables)
-- [ ] Identify keys (primary/foreign) for relationships
+- [X] Identify keys (primary/foreign) for relationships
 - [ ] Create relationships between tables
 - [ ] Understand relationship cardinality (1:*, *:*)
 - [ ] Understand cross filter direction (single, both)
