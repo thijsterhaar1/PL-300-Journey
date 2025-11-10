@@ -85,3 +85,36 @@
 
 ---
 
+### Step 2.1.4 – Relationship cardinality
+
+#### What I did in Power BI
+- Opened **Model view** and checked all relationships:
+  - DimCustomer → FactSales
+  - DimProduct → FactSales
+  - DimStore → FactSales
+  - DimDate → FactSales
+- For each relationship, confirmed:
+  - The **dimension** table is on the "1" side.
+  - The **fact** table (FactSales) is on the "*" side.
+  - Cardinality shows as "Many to one (*:1)" from fact to dimension,
+    which conceptually is a **1:* (one-to-many)** relationship.
+
+#### What I learned
+- **One-to-many (1:*)**:
+  - Most common in star schemas.
+  - Dimension table has unique keys (1 side).
+  - Fact table has many matching rows (* side).
+- **Many-to-many (*:*)**:
+  - Both tables have repeated key values.
+  - Can lead to ambiguous filters and double counting.
+  - Should be used carefully, often with a bridge table.
+- **One-to-one (1:1)**:
+  - Less common.
+  - Used when two tables share a unique key and could almost be a single table.
+- Best practice:
+  - Design star schemas so dimensions are on the **1** side
+    and the fact table is on the **\*** side (one-to-many).
+  - Avoid many-to-many unless there is a clear reason and design.
+
+---
+
