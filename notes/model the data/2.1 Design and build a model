@@ -60,3 +60,28 @@
 
 ---
 
+### Step 2.1.3 – Create relationships between tables
+
+#### What I did in Power BI
+- Opened **Model view** with:
+  - DimCustomer, DimProduct, DimStore, DimDate, FactSales.
+- Removed any incorrect auto-detected relationships.
+- Manually created relationships:
+  - DimCustomer[CustomerID] → FactSales[CustomerID]
+  - DimProduct[ProductID] → FactSales[ProductID]
+  - DimStore[StoreID] → FactSales[StoreID]
+  - DimDate[DateKey] → FactSales[DateKey]
+- Checked each relationship:
+  - Dimension table on the **1** side, FactSales on the **\*** side.
+  - Cross filter direction set to **Single**.
+  - Relationship marked as **Active**.
+- Tested with a simple report:
+  - Table visual with CustomerName and SalesAmount to confirm filters work.
+
+#### What I learned
+- Relationships in a star schema connect each dimension key to its matching foreign key in the fact table.
+- Creating relationships manually gives more control than relying on auto-detect.
+- Having the correct relationships is required for filters and measures to work correctly in reports.
+
+---
+
