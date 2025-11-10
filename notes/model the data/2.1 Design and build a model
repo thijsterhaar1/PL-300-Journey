@@ -24,4 +24,39 @@
 
 ---
 
+### Step 2 – Identify keys for relationships
+
+#### What I did in Power BI
+- Loaded the CSV files:
+  - DimCustomer, DimProduct, DimStore, DimDate, FactSales.
+- In Power Query, turned on:
+  - Column quality
+  - Column distribution
+  - Column profile
+  - Profiling based on **Entire data**.
+- Checked primary keys in dimension tables:
+  - `DimCustomer[CustomerID]` → unique, no nulls.
+  - `DimProduct[ProductID]` → unique, no nulls.
+  - `DimStore[StoreID]` → unique, no nulls.
+  - `DimDate[DateKey]` → unique, no nulls.
+- Checked keys in the fact table:
+  - `FactSales[SalesID]` → unique → primary key of the fact table.
+  - `FactSales[CustomerID]`, `[ProductID]`, `[StoreID]`, `[DateKey]`:
+    - Many repeated values, no nulls → good foreign keys.
+- Created a conceptual mapping:
+  - DimCustomer[CustomerID] → FactSales[CustomerID]
+  - DimProduct[ProductID] → FactSales[ProductID]
+  - DimStore[StoreID] → FactSales[StoreID]
+  - DimDate[DateKey] → FactSales[DateKey]
+
+#### What I learned
+- A **primary key** uniquely identifies each row in a table and should have no null values.
+- In a star schema, dimension tables usually provide the primary keys used in relationships.
+- A **foreign key** is a column in another table that refers to a primary key.
+- In the fact table:
+  - Foreign keys can repeat many times (one customer/product appears in many sales).
+  - A separate surrogate key (SalesID) can be used as the fact table's primary key.
+- Clearly identifying primary and foreign keys makes it easier to create correct relationships in the model.
+
+---
 
