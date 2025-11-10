@@ -60,7 +60,7 @@
 
 ---
 
-### Step 2.1.3 – Create relationships between tables
+### Step 3 – Create relationships between tables
 
 #### What I did in Power BI
 - Opened **Model view** with:
@@ -85,7 +85,7 @@
 
 ---
 
-### Step 2.1.4 – Relationship cardinality
+### Step 4 – Relationship cardinality
 
 #### What I did in Power BI
 - Opened **Model view** and checked all relationships:
