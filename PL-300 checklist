@@ -100,7 +100,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 - [X] Know the difference between:
   - [X] Calculated column
   - [X] Measure
-- [ ] Create basic calculated columns
+- [X] Create basic calculated columns
 - [ ] Create basic measures:
   - [ ] `SUM`
   - [ ] `COUNT` / `COUNTROWS`
