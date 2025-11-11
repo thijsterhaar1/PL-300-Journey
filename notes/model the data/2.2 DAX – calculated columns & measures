@@ -125,3 +125,30 @@
 
 ---
 
+### Step 5 – Use FILTER in a measure
+
+#### What I did in Power BI
+- Created a measure to calculate sales from high-quantity orders:
+
+  Total Sales High Qty =
+  CALCULATE(
+      [Total Sales],
+      FILTER(
+          fact_sales,
+          fact_sales[Quantity] >= 3
+      )
+  )
+
+- Used this measure in:
+  - Card visuals (compare Total Sales vs. Total Sales High Qty).
+  - Table visual with CustomerName to see high-quantity sales per customer.
+
+#### What I learned
+- `FILTER(table, condition)` returns a **table** with only rows that meet the condition.
+- `CALCULATE` uses that filtered table to **change the filter context** of a measure.
+- Use `FILTER` when:
+  - De voorwaarde per rij wordt bepaald (bijv. Quantity >= 3),
+  - Of als de logica te complex is voor een simpele `column = value` filter in CALCULATE.
+
+---
+
