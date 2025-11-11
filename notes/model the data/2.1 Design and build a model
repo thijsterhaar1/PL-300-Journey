@@ -140,3 +140,31 @@
 - Best practice for PL-300:
   - Use **Single** for dimension → fact in a star schema.
   - Use **Both** only when there is a clear, justified scenario and you understand the impact.
+
+---
+
+### Step 6 – Hide technical columns from report view
+
+#### What I did in Power BI
+- Reviewed the tables to find technical columns:
+  - Keys used only for relationships: CustomerID, ProductID, StoreID, DateKey, SalesID.
+  - Other helper columns that end users don't need to see.
+- In Model/Data view:
+  - Right-clicked each technical column → **Hide in report view**.
+- Verified in Report view:
+  - Hidden columns no longer appear in the Fields list.
+  - Relationships and measures still work as before.
+
+#### What I learned
+- Hiding a column only affects the **report view**:
+  - Data stays in the model.
+  - Relationships and DAX can still use the column.
+- Good candidates to hide:
+  - Technical ID columns used for relationships.
+  - Sort-by columns and internal helper fields.
+- Benefits:
+  - Cleaner Fields list.
+  - Easier for report users to find the fields and measures they actually need.
+
+---
+
