@@ -97,9 +97,9 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 2.2 DAX – calculated columns & measures
 
-- [ ] Know the difference between:
-  - [ ] Calculated column
-  - [ ] Measure
+- [X] Know the difference between:
+  - [X] Calculated column
+  - [X] Measure
 - [ ] Create basic calculated columns
 - [ ] Create basic measures:
   - [ ] `SUM`
