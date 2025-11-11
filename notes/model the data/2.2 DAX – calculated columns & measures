@@ -90,3 +90,38 @@
 
 ---
 
+### Step 4 – Use CALCULATE to change filter context
+
+#### What I did in Power BI
+- Created measure **Total Sales Corporate**:
+
+  `Total Sales Corporate =
+  CALCULATE(
+      [Total Sales],
+      dim_customer[Segment] = "Corporate"
+  )`
+
+  - Always returns sales for Corporate customers only, even when other segments are selected.
+
+- Created measure **Total Sales All Customers**:
+
+  `Total Sales All Customers =
+  CALCULATE(
+      [Total Sales],
+      ALL( dim_customer )
+  )`
+
+  - Ignores any filters on the Customer dimension.
+
+- Tested in visuals:
+  - Card for `Total Sales Corporate` with various slicers.
+  - Table with CustomerName, `Total Sales`, and `Total Sales All Customers` to see the difference.
+
+#### What I learned
+- `CALCULATE` reevaluates a measure in a **modified filter context**.
+- Extra filter arguments like `dim_customer[Segment] = "Corporate"` add/override filters.
+- Using `ALL(dim_customer)` removes filters from that table (useful for "ignore slicer" scenarios).
+- `CALCULATE` is the main function to control *how* and *for whom* a measure is calculated.
+
+---
+
