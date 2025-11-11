@@ -107,8 +107,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - [X] `AVERAGE`
 - [X] Use `CALCULATE` to change filter context
 - [X] Use `FILTER` in a measure
-- [ ] Use `RELATED` / `RELATEDTABLE`
-- [ ] Understand row context vs filter context (in simple terms)
+- [X] Use `RELATED` / `RELATEDTABLE`
+- [X] Understand row context vs filter context (in simple terms)
 
 ### 2.3 Time intelligence (basic)
 
