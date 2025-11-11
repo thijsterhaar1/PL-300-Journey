@@ -188,3 +188,44 @@
 
 ---
 
+### Step 7 – Row context vs filter context
+
+#### What I did in Power BI
+- Created a calculated column in `fact_sales`:
+
+  Line Total =
+  fact_sales[Quantity] * fact_sales[UnitPrice]
+
+  - Value calculated separately for each row in the table.
+
+- Created measures:
+
+  Total Line Total =
+  SUM( fact_sales[Line Total] )
+
+  Total Line Total All Customers =
+  CALCULATE(
+      [Total Line Total],
+      ALL( dim_customer )
+  )
+
+- Used these in a table visual with CustomerName and slicers on Store/Date/Customer to see how the measures react to filters.
+
+#### What I learned
+- **Row context**
+  - Applies when DAX evaluates a formula **for each row**, e.g. in a calculated column.
+  - Example: `Line Total = Quantity * UnitPrice` is calculated row by row.
+  - Think: “ik sta nu op deze rij, gebruik de waarden van deze rij.”
+
+- **Filter context**
+  - Comes from filters, slicers, rows/columns in a visual.
+  - Measures are always evaluated in the current filter context.
+  - Example: `Total Line Total = SUM(Line Total)` returns a different value for each customer or slicer selection.
+
+- **CALCULATE**
+  - Changes the filter context for a measure.
+  - Example: `ALL(dim_customer)` removes customer filters so the measure ignores customer slicers.
+
+- Simple summary:
+  - Calculated columns → mainly **row context** (per rij).
+  - Measures → mainly **filter context** (per selectie/visual).
