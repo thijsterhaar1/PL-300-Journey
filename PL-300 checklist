@@ -93,7 +93,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 - [X] Understand relationship cardinality (1:*, *:*)
 - [X] Understand cross filter direction (single, both)
 - [X] Hide technical columns from report view
-- [ ] Organize fields into display folders (optional but nice)
+- [X] Organize fields into display folders (optional but nice)
 
 ### 2.2 DAX – calculated columns & measures
 
