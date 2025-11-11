@@ -168,3 +168,31 @@
 
 ---
 
+### Step 2.1.7 – Organize fields into display folders
+
+#### What I did in Power BI
+- (Optional) Created a dedicated **Measures** table with:
+  - `Measures = {}`.
+- Opened **Model view** and selected measures/columns.
+- In the Properties pane, set **Display folder** values, for example:
+  - Measures:
+    - SalesAmount → "Sales"
+    - Total Quantity → "Sales"
+    - YTD Sales → "Time intelligence"
+  - DimDate columns:
+    - Year, MonthName, Date → "Calendar"
+- Checked the Fields list:
+  - Measures and columns are now grouped into logical folders.
+
+#### What I learned
+- A **display folder** groups fields in the Fields pane only:
+  - It does **not** change the data model or relationships.
+- Good use cases:
+  - Group related measures (Sales, Time intelligence, Customer KPIs).
+  - Group date attributes (Calendar, Fiscal).
+- Benefits:
+  - Cleaner, more structured Fields list.
+  - Easier for report builders to find the right fields and measures.
+
+---
+
