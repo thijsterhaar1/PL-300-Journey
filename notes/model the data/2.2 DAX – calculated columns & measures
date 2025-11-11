@@ -1,1 +1,38 @@
+### Step 1 – Calculated column vs measure
+
+#### What I did in Power BI
+- Created a **calculated column** in fact_sales:
+
+  `SalesAmount Calc Column = fact_sales[Quantity] * fact_sales[UnitPrice]`
+
+  - Value stored per row in the table.
+  - Does not change when I filter the report.
+
+- Created a **measure**:
+
+  `Total Sales = SUM(fact_sales[SalesAmount])`
+
+  - Used the measure in a table visual with CustomerName.
+  - Saw that the measure result changes depending on filters and slicers.
+
+#### What I learned
+- **Calculated column**
+  - Evaluated when the data is loaded/refreshes.
+  - Stores a value **per row** in the table.
+  - Increases model size because values are saved.
+  - Useful when I need the value as:
+    - A grouping/slicer/axis
+    - Part of relationships or row-level security.
+
+- **Measure**
+  - Not stored in the table; calculated **on the fly**.
+  - Uses the current **filter context** (what the user has filtered).
+  - Ideal for aggregations (SUM, AVERAGE, counts, ratios).
+  - Best for KPIs and numbers shown in visuals.
+
+- Rule of thumb:
+  - If I need a value per row (for grouping, filtering, or relationships) → **calculated column**.
+  - If I just need a number in visuals that should react to filters → **measure**.
+
+---
 
