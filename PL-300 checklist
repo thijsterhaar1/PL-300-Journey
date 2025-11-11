@@ -105,7 +105,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - [X] `SUM`
   - [X] `COUNT` / `COUNTROWS`
   - [X] `AVERAGE`
-- [ ] Use `CALCULATE` to change filter context
+- [X] Use `CALCULATE` to change filter context
 - [ ] Use `FILTER` in a measure
 - [ ] Use `RELATED` / `RELATEDTABLE`
 - [ ] Understand row context vs filter context (in simple terms)
