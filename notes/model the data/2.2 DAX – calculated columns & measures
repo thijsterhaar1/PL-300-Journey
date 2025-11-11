@@ -36,3 +36,30 @@
 
 ---
 
+### Step 2 – Create basic calculated columns
+
+#### What I did in Power BI
+- Created a **Quantity Category** column in `fact_sales`:
+
+  `Quantity Category = IF( fact_sales[Quantity] >= 3, "High", "Low" )`
+
+- Created a **YearMonth** column in `dim_date`:
+
+  `YearMonth = FORMAT( dim_date[Date], "YYYY-MM" )`
+
+- Created a **Customer Label** column in `dim_customer`:
+
+  `Customer Label = dim_customer[CustomerName] & " (" & dim_customer[City] & ")"`
+
+- Used these columns in visuals as slicers/axes/labels.
+
+#### What I learned
+- Calculated columns are evaluated row by row and stored in the model.
+- They are useful for:
+  - Grouping (e.g. High/Low categories),
+  - Creating friendly labels,
+  - Building date/grouping fields like Year-Month.
+- DAX operators (arithmetic, comparison, text concatenation) are the basics for most calculated columns.
+
+---
+
