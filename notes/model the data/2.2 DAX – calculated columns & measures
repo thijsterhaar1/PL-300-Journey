@@ -63,3 +63,30 @@
 
 ---
 
+### Step 3 – Create basic measures (SUM, COUNT, COUNTROWS, AVERAGE)
+
+#### What I did in Power BI
+- Created SUM measures:
+  - `Total Sales = SUM( fact_sales[SalesAmount] )`
+  - `Total Quantity = SUM( fact_sales[Quantity] )`
+- Created count measures:
+  - `Order Count (COUNT) = COUNT( fact_sales[SalesID] )`
+  - `Order Count (COUNTROWS) = COUNTROWS( fact_sales )`
+- Created an average measure:
+  - `Average Quantity per Order = AVERAGE( fact_sales[Quantity] )`
+- Used these measures in:
+  - Card visuals for totals.
+  - Table visuals with CustomerName / StoreName to see values per group.
+  - Slicers to see how measures react to filters.
+
+#### What I learned
+- **SUM(column)** adds up all numeric values in the column (respecting filters).
+- **COUNT(column)** counts non-blank values in a single column.
+- **COUNTROWS(table)** counts all rows in the table for the current filter context.
+- **AVERAGE(column)** returns the average of a numeric column.
+- Measures:
+  - Are not stored in the table.
+  - Are recalculated dynamically based on the current filters in the report.
+
+---
+
