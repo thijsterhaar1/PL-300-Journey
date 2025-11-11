@@ -101,10 +101,10 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - [X] Calculated column
   - [X] Measure
 - [X] Create basic calculated columns
-- [ ] Create basic measures:
-  - [ ] `SUM`
-  - [ ] `COUNT` / `COUNTROWS`
-  - [ ] `AVERAGE`
+- [X] Create basic measures:
+  - [X] `SUM`
+  - [X] `COUNT` / `COUNTROWS`
+  - [X] `AVERAGE`
 - [ ] Use `CALCULATE` to change filter context
 - [ ] Use `FILTER` in a measure
 - [ ] Use `RELATED` / `RELATEDTABLE`
