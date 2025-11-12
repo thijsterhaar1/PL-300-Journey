@@ -20,3 +20,23 @@
   a dedicated date table, not auto date/time.
 - The date table must fully cover the date range used in fact tables.
 
+---
+
+### Step 2 – Mark date table as "Date table"
+
+#### What I did in Power BI
+- Verified that `dim_date[Date]`:
+  - Is of data type **Date**.
+  - Has one unique value per row (no blanks, no duplicates).
+- In **Model view**:
+  - Selected the `dim_date` table.
+  - Used **Table tools → Mark as date table**.
+  - Chose the `Date` column as the date column.
+- Confirmed that `dim_date` is now marked as the official Date table for the model.
+
+#### What I learned
+- Power BI needs a dedicated **marked date table** for DAX time intelligence functions to work correctly.
+- The date column used to mark the table must:
+  - Be of type **Date**.
+  - Contain unique values (one row per date, no blanks).
+- Once marked, functions like YTD, MTD, SAMEPERIODLASTYEAR will reference this table.
