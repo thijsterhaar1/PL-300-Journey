@@ -1,1 +1,26 @@
+### Step 1 – Remove unnecessary columns
+
+#### What I did in Power BI
+- Reviewed each table to identify unnecessary columns:
+  - Kept columns used in relationships, visuals, slicers, or measures.
+  - Marked columns with constant values or not used anywhere as candidates to remove.
+- In Power Query:
+  - Opened **Transform data**.
+  - Selected unwanted columns (e.g. Country in dim_customer, unused helper fields).
+  - Used **Remove columns**.
+  - Applied changes back to the model.
+- Verified:
+  - Removed columns no longer appear in Model/Data view.
+  - Existing visuals and measures still work.
+
+#### What I learned
+- Removing unnecessary columns:
+  - Reduces model size and memory usage.
+  - Can improve performance (less data to scan).
+  - Makes the model simpler to understand.
+- Difference with hiding columns:
+  - **Hide** = kolom blijft in het model (alleen niet zichtbaar in Fields → geen performance winst).
+  - **Remove** = kolom echt weg uit het model → wél performance/memory winst.
+
+---
 
