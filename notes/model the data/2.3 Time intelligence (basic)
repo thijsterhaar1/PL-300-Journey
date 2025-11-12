@@ -1,1 +1,22 @@
+### Step 1 – Proper date table
+
+#### What I did in Power BI
+- Reviewed **dim_date**:
+  - Confirmed one row per calendar date.
+  - Checked that `Date` column is type **Date** (no blanks).
+  - Verified supporting columns: Year, MonthNumber, MonthName, Quarter.
+- Verified coverage for my fact table:
+  - All `fact_sales[DateKey]` values exist in `dim_date[DateKey]`.
+  - Date range in dim_date fully covers the sales data.
+- (Optional) Practiced creating a date table with DAX:
+  - Used `CALENDAR` + `ADDCOLUMNS` to generate dates and year/month/quarter fields.
+
+#### What I learned
+- A proper **date table**:
+  - Has one row per date, with no gaps.
+  - Uses a true Date-type column for relationships and time intelligence.
+  - Includes helper columns (Year, Month, Quarter, etc.) for grouping.
+- Time intelligence functions (YTD, MTD, SAMEPERIODLASTYEAR, etc.) expect
+  a dedicated date table, not auto date/time.
+- The date table must fully cover the date range used in fact tables.
 
