@@ -50,3 +50,31 @@
 
 ---
 
+### Step 3 – Basics of model performance (high level)
+
+#### What I did in Power BI
+- Opened **Performance Analyzer** (View → Performance Analyzer).
+- Recorded and refreshed visuals to see:
+  - DAX query time
+  - Visual display time
+  - Other time
+- Observed which visuals take the longest to render.
+- Reviewed my model for common performance factors:
+  - Relationship types (prefer 1:* with Single direction, avoid many-to-many/bi-directional unless necessary).
+  - Columns with very high cardinality (many unique text values).
+  - Complexity of DAX measures (simple aggregations vs heavy row-by-row logic).
+
+#### What I learned
+- Model performance is mainly affected by:
+  - **Model size** (number of tables/columns, high-cardinality columns).
+  - **Relationships and filter direction** (clean star schema is fastest).
+  - **DAX complexity** (simple SUM/AVERAGE on fact tables is cheap; nested CALCULATE/FILTER/SUMX is more expensive).
+  - **Visual design** (veel visuals op één pagina = meer queries).
+- Performance Analyzer helps identify:
+  - Which visuals/measures are slow.
+  - Whether the time is in the DAX query or in visual rendering.
+- High-level best practices:
+  - Keep a clean **star schema** with 1:* relationships and Single direction.
+  - Remove unnecessary columns/rows and avoid high-cardinality text where possible.
+  - Use a proper Date table instead of multiple auto date tables.
+  - Keep measures as simple as possible and reuse base measures.
