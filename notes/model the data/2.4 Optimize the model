@@ -24,3 +24,29 @@
 
 ---
 
+### Step 2 – Disable auto date/time (or understand its impact)
+
+#### What I did in Power BI
+- Reviewed what Auto date/time does:
+  - Power BI automatically creates hidden date tables for each Date/DateTime column.
+  - Useful for quick time intelligence, but adds extra tables and model size.
+- In the current PBIX file:
+  - File → Options and settings → Options → **Current File → Data Load**
+  - Turned off **Auto date/time** for this file.
+- (Optional) Globally:
+  - File → Options → **Global → Data Load**
+  - Turned off Auto date/time for new files.
+
+#### What I learned
+- Auto date/time:
+  - Creates hidden date tables behind each date column.
+  - Increases model size and can be confusing when I already have a proper date table.
+- With a dedicated `dim_date` marked as a Date table:
+  - I don't need Auto date/time.
+  - Turning it off simplifies the model and can improve performance.
+- On the exam:
+  - If I see a question about reducing model size or avoiding duplicate date tables,
+    **disabling Auto date/time** is often the right choice (when a proper date table exists).
+
+---
+
