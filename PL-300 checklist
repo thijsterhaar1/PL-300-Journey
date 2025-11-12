@@ -112,7 +112,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 2.3 Time intelligence (basic)
 
-- [ ] Have a proper date table in the model
+- [X] Have a proper date table in the model
 - [ ] Mark date table as “Date table”
 - [ ] Create measures like:
   - [ ] Year-to-Date (YTD)
