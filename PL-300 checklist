@@ -123,8 +123,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 ### 2.4 Optimize the model
 
 - [X] Remove unnecessary columns
-- [ ] Disable auto-date/time (or understand its impact)
-- [ ] Understand basics of model performance (high level)
+- [X] Disable auto-date/time (or understand its impact)
+- [X] Understand basics of model performance (high level)
 
 ---
 
