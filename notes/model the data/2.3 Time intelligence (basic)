@@ -40,3 +40,53 @@
   - Be of type **Date**.
   - Contain unique values (one row per date, no blanks).
 - Once marked, functions like YTD, MTD, SAMEPERIODLASTYEAR will reference this table.
+
+---
+
+### Step 3 – Time intelligence measures (YTD, MTD, Same period last year)
+
+#### What I did in Power BI
+- Created `Total Sales` as base measure:
+  - `Total Sales = SUM( fact_sales[SalesAmount] )`
+- Created YTD measure:
+
+  `Total Sales YTD =
+  TOTALYTD(
+      [Total Sales],
+      dim_date[Date]
+  )`
+
+- Created MTD measure:
+
+  `Total Sales MTD =
+  TOTALMTD(
+      [Total Sales],
+      dim_date[Date]
+  )`
+
+- Created same period last year measure:
+
+  `Total Sales Same Period LY =
+  CALCULATE(
+      [Total Sales],
+      SAMEPERIODLASTYEAR( dim_date[Date] )
+  )`
+
+- Tested these measures in:
+  - Table/matrix with Date or YearMonth on rows.
+  - Line chart comparing YTD vs Same Period Last Year.
+  - Slicers on Year, Customer, Store to see how results change with filters.
+
+#### What I learned
+- Time intelligence functions require:
+  - A dedicated, marked **date table** (dim_date).
+  - A continuous Date column used in relationships.
+- `TOTALYTD` / `TOTALMTD`:
+  - Aggregate a base measure from the start of the year/month to the current date.
+- `SAMEPERIODLASTYEAR`:
+  - Shifts the current date context back by one year to compare periods.
+- Typical pattern:
+  - Base measure (`Total Sales`) → wrap with YTD/MTD/LY functions for time-based analysis.
+
+---
+
