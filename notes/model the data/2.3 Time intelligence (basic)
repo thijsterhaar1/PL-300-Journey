@@ -90,3 +90,31 @@
 
 ---
 
+### Step 4 – Visuals comparing this year vs last year
+
+#### What I did in Power BI
+- Built a line chart:
+  - Axis: dim_date[Date] (or YearMonth).
+  - Values: Total Sales YTD and Total Sales Same Period LY.
+  - Used slicers (Year, Customer Segment) to see how lines change.
+
+- Built a column chart:
+  - Axis: dim_date[Year].
+  - Values: Total Sales.
+  - (Optional) Legend: Customer Segment to compare segments by year.
+
+- (Optional) Created a YoY % measure:
+
+  `Total Sales YoY % =
+  DIVIDE(
+      [Total Sales] - [Total Sales Same Period LY],
+      [Total Sales Same Period LY]
+  )`
+
+  and used it in a card or table.
+
+#### What I learned
+- Time-intelligence measures (YTD, Same Period LY) become powerful when visualized over time.
+- Line charts are ideal for trending this year vs last year.
+- Column charts help compare yearly totals side by side.
+- A simple YoY% measure highlights growth/decline between periods.
