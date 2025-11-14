@@ -1,0 +1,91 @@
+# Project 2 — Sales Model v1
+
+Small Power BI project to practise building a **star schema** with multiple tables, basic relationships, and core DAX measures.
+
+## Dataset
+
+Use the 5-table star schema (CSV/Excel):
+
+- **fact_sales**: SalesID, DateKey, CustomerID, ProductID, StoreID, Quantity, UnitPrice, SalesAmount
+- **dim_customer**: CustomerID, CustomerName, Segment, City, Country
+- **dim_product**: ProductID, ProductName, Category, Subcategory, UnitPrice (optional)
+- **dim_store**: StoreID, StoreName, City, Region
+- **dim_date**: DateKey, Date, Year, MonthNumber, MonthName, Quarter
+
+> Goal: one clean fact table linked to four dimensions.
+
+## Modeling steps (Power BI)
+
+1. **Load tables**
+   - Import all five tables (CSV/Excel).
+   - Fix data types (IDs: Whole number; Date: Date; numeric: Decimal/Whole).
+
+2. **Create relationships**
+   - dim_customer[CustomerID] → fact_sales[CustomerID]  
+   - dim_product[ProductID] → fact_sales[ProductID]  
+   - dim_store[StoreID] → fact_sales[StoreID]  
+   - dim_date[DateKey] → fact_sales[DateKey]
+   - Check: **Many-to-one** (*:1) from fact to dim, **Cross filter = Single**.
+
+3. **Tidy the model**
+   - Hide technical columns: all IDs/keys (CustomerID, ProductID, StoreID, DateKey, SalesID).
+   - (Optional) Display folders for measures (e.g., `Sales`, `Counts`).
+
+4. **Calculated columns (simple)**
+   - In `fact_sales`:
+     - `Quantity Category = IF( fact_sales[Quantity] >= 3, "High", "Low" )`
+   - In `dim_customer`:
+     - `Customer Label = dim_customer[CustomerName] & " (" & dim_customer[City] & ")"`
+
+5. **Core measures**
+   - ```DAX
+     Total Sales = SUM( fact_sales[SalesAmount] )
+     ```
+     *(Of: `SUMX(fact_sales, fact_sales[Quantity] * fact_sales[UnitPrice])`)*  
+   - ```DAX
+     Total Quantity = SUM( fact_sales[Quantity] )
+     Order Count   = COUNTROWS( fact_sales )
+     Average Quantity per Order = AVERAGE( fact_sales[Quantity] )
+     ```
+   - Examples with CALCULATE:
+     ```DAX
+     Total Sales Corporate =
+       CALCULATE( [Total Sales], dim_customer[Segment] = "Corporate" )
+
+     Total Sales High Qty =
+       CALCULATE( [Total Sales], FILTER( fact_sales, fact_sales[Quantity] >= 3 ) )
+
+     Total Sales All Customers =
+       CALCULATE( [Total Sales], ALL( dim_customer ) )
+     ```
+
+6. **(Optional) Date table**
+   - Mark `dim_date` as **Date table** (column: `Date`).
+   - Add:
+     ```DAX
+     Total Sales YTD = TOTALYTD( [Total Sales], dim_date[Date] )
+     ```
+
+## Report
+
+One **Sales Model v1** page with:
+
+- **Cards**: `Total Sales`, `Total Quantity`, `Order Count`
+- **Table/Matrix**:
+  - Rows: `Customer Name` (or `Customer Label`)
+  - Values: `Total Sales`, `Order Count`, `Average Quantity per Order`
+- **Column chart**:
+  - Axis: `Category`
+  - Values: `Total Sales`
+  - Legend (optional): `Region`
+- **Slicers**: `Region/StoreName`, `Segment`, (`Year` or `Date`)
+
+## Learnings
+
+- Built a clean **star schema** (1:\* with Single direction).
+- Understood the difference between **calculated columns** (row context) and **measures** (filter context).
+- Created core DAX measures (SUM, COUNTROWS, AVERAGE) and simple `CALCULATE`/`FILTER` variants.
+- Hid technical columns and organized fields for a clean Fields pane.
+- Verified filters/relationships using slicers and visuals.
+- (Optional) Marked a **Date table** and created a first **YTD** measure.
+
