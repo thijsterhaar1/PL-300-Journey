@@ -132,13 +132,13 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 3.1 Create reports and visuals
 
-- [ ] Add and format:
-  - [ ] Bar/Column charts
-  - [ ] Line charts
-  - [ ] Tables
-  - [ ] Matrix
-  - [ ] Cards / KPIs
-  - [ ] Pie/Donut charts (and when NOT to overuse them)
+- [X] Add and format:
+  - [X] Bar/Column charts
+  - [X] Line charts
+  - [X] Tables
+  - [X] Matrix
+  - [X] Cards / KPIs
+  - [X] Pie/Donut charts (and when NOT to overuse them)
 - [ ] Use slicers (single-select, multi-select)
 - [ ] Use filters:
   - [ ] Visual-level filters
