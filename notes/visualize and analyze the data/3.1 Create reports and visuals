@@ -1,1 +1,44 @@
+### Step 1 – Add and format core visuals (Project 2 – Sales Model v1)
+
+#### What I did in Power BI
+- Created a new page: `3.1.1 – Basic visuals`.
+- Built a **clustered column chart**:
+  - Axis: `dim_date[MonthNumber]`, `dim_date[MonthName]`
+  - Values: `[Total Sales]`
+  - Sorted by `MonthNumber`, added data labels, clear title.
+- Built a **bar chart**:
+  - Axis: `dim_store[Region]`
+  - Values: `[Total Sales]`
+  - Sorted descending to see top regions.
+- Built a **line chart**:
+  - Axis: `dim_date[Date]` (Continuous)
+  - Values: `[Total Sales]`
+  - Used to show daily sales trend.
+- Built a **table**:
+  - Columns: `dim_customer[Customer Label]`, `[Total Sales]`
+  - Sorted descending on `[Total Sales]` to see top customers.
+- Built a **matrix**:
+  - Rows: `dim_store[Region]`
+  - Columns: `dim_product[Category]`
+  - Values: `[Total Sales]`
+  - Checked subtotals and header formatting.
+- Added **cards (KPIs)**:
+  - Card for `[Total Sales]` as main KPI on top of the page.
+- Built a **donut chart**:
+  - Legend: `dim_product[Category]`
+  - Values: `[Total Sales]`
+  - Showed percentage of total sales per category.
+
+#### What I learned
+- Column/bar charts are best for comparing categories (e.g. Region, Category).
+- Line charts are best for showing trends over time using the `dim_date[Date]` column.
+- Tables help to show detailed numbers (top customers with exact sales).
+- Matrices give a pivot-style view (Region x Category with subtotals).
+- Cards highlight 1–3 key KPIs like `[Total Sales]`.
+- Pie/Donut charts:
+  - Work for a small number of categories (3–6).
+  - Become hard to read with many categories → then a bar/column chart is clearer.
+
+---
+
 
