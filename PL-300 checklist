@@ -25,7 +25,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - Build a small report from a single Excel/CSV source.
   - Use Power Query to clean data (remove columns, fix data types, filter rows).
 
-- [ ] **Project 2 – Sales Model v1**
+- [X] **Project 2 – Sales Model v1**
   - Target timing: after you’ve learned basic relationships and simple DAX.
   - Create a model with multiple tables (e.g. Sales, Customers, Products).
   - Add basic measures (`SUM`, `COUNT`, simple `CALCULATE`) and a few core visuals.
