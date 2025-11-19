@@ -1,1 +1,28 @@
+### Step 1 – Create drillthrough pages (Region detail)
+
+#### What I did in Power BI
+- Created summary page `3.2.1 – Region overview` with a bar chart:
+  - Axis: `dim_store[Region]`
+  - Values: `[Total Sales]`
+- Created a **drillthrough page** `Region detail`.
+- In the Drill-through section:
+  - Added `dim_store[Region]` as the drillthrough field.
+  - Kept "Keep all filters" turned on.
+- Built visuals on the Region detail page:
+  - Card with `[Total Sales]` for the selected Region.
+  - Table with:
+    - Rows: `dim_store[StoreName]`
+    - Values: `[Total Sales]`, `Quantity` (optional).
+  - (Optional) Line chart with sales trend over time for that Region.
+- Tested drillthrough:
+  - Right-click on a bar in "Sales by Region" chart → Drillthrough → `Region detail`.
+  - Checked that all visuals on the detail page are filtered to the selected Region.
+
+#### What I learned
+- A drillthrough page is a detail page filtered by a specific field (e.g. Region).
+- The field in the **Drill-through** well (e.g. `dim_store[Region]`) must also be present in the source visual.
+- "Keep all filters" passes slicers/page filters from the source page to the drillthrough page.
+- Users can right-click a data point and open a detailed view without adding extra slicers.
+
+---
 
