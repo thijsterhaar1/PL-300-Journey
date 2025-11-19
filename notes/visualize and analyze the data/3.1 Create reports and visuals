@@ -41,4 +41,38 @@
 
 ---
 
+### Step 2 – Use slicers (single-select, multi-select)
+
+#### What I did in Power BI
+- Created new page: `3.1.2 – Slicers` and copied a few visuals (column chart, bar chart, table).
+- Added a **Year slicer**:
+  - Field: `dim_date[Year]`
+  - Slicer type: Dropdown
+  - Single select = On (user can only pick one year)
+- Added a **Customer slicer**:
+  - Field: `dim_customer[Customer Label]`
+  - Vertical list with search box enabled
+  - Multi-select allowed (CTRL to select multiple customers)
+- Added a **Product Category slicer**:
+  - Field: `dim_product[Category]`
+  - Horizontal slicer for quick selection of categories
+  - Multi-select allowed
+- (Optional) Added a **Region slicer**:
+  - Field: `dim_store[Region]`
+  - Used as dropdown, depending on whether I want single- or multi-select.
+- Tested all slicers to see how they change:
+  - Column chart (Sales by Month)
+  - Bar chart (Sales by Region)
+  - Table (Top customers)
+
+#### What I learned
+- Slicers filter all visuals on the page by changing the filter context.
+- **Single-select slicers** (e.g. Year) are useful when users should focus on exactly one value.
+- **Multi-select slicers** are useful for comparing multiple values (e.g. several customers or product categories).
+- Search within a slicer helps when a column has many values (e.g. customer names).
+- Slicers are different from visual-/page-level filters because:
+  - Users see them directly on the report canvas.
+  - They let users interactively change the analysis.
+
+---
 
