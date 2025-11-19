@@ -140,11 +140,11 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - [X] Cards / KPIs
   - [X] Pie/Donut charts (and when NOT to overuse them)
 - [X] Use slicers (single-select, multi-select)
-- [ ] Use filters:
-  - [ ] Visual-level filters
-  - [ ] Page-level filters
-  - [ ] Report-level filters
-- [ ] Use drilldown and expand in visuals
+- [X] Use filters:
+  - [X] Visual-level filters
+  - [X] Page-level filters
+  - [X] Report-level filters
+- [X] Use drilldown and expand in visuals
 
 ### 3.2 Interactivity & navigation
 
