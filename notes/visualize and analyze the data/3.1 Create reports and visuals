@@ -105,3 +105,27 @@
 
 ---
 
+### Step 4 – Drilldown and hierarchies
+
+#### What I did in Power BI
+- Created new page: `3.1.4 – Drilldown`.
+- Created three hierarchies in the model:
+  - `Date Hierarchy`: Year → Month → Date (in dim_date).
+  - `Store Hierarchy`: Region → StoreName (in dim_store).
+  - `Product Hierarchy`: Category → Subcategory → ProductName (in dim_product).
+- Built a **column chart** with `Date Hierarchy` on Axis and `[Total Sales]` on Values:
+  - Used drill buttons to:
+    - Drill down from Year → Month → Date.
+    - Drill up back to Year.
+    - Use "Go to next level" and "Expand all down one level".
+- Built a **bar/column chart** with `Store Hierarchy`:
+  - Started at Region level and drilled down to individual stores.
+- Built a **matrix** with `Product Hierarchy` on Rows and `[Total Sales]` on Values:
+  - Used the +/- icons to expand and collapse Category → Subcategory → ProductName.
+
+#### What I learned
+- Hierarchies group multiple levels (Year, Month, Date) into a single field, making drilldown easy.
+- Drilldown changes the level of detail in a visual without changing the measure.
+- "Drill down" focuses on the selected item; "Go to next level" shows all items at the next level.
+- "Expand all down one level" shows multiple hierarchy levels at the same time (e.g. all Years with their Months).
+- Matrices use +/- icons for drilldown through row hierarchies.
