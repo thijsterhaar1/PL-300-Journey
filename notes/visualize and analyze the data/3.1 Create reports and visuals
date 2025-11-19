@@ -76,3 +76,32 @@
 
 ---
 
+### Step 3 – Use filters (visual, page, report)
+
+#### What I did in Power BI
+- Created new page: `3.1.3 – Filters` and copied existing visuals (Sales by Month, Sales by Region, Customer table).
+- Used a **visual-level filter**:
+  - On the Region bar/column chart, filtered `dim_product[Category]` to only show one category (e.g. Bikes).
+- Used a **page-level filter**:
+  - Added `dim_date[Year]` to "Filters on this page" and selected a single year (e.g. 2020).
+  - All visuals on this page now only show that year.
+- Used a **report-level filter**:
+  - Added `dim_store[Region]` to "Filters on all pages" and selected one Region.
+  - All pages in the report were filtered to that Region.
+- Created a **Top N filter** on the customer table:
+  - Filter type: Top N
+  - Top 10 by `[Total Sales]`
+  - Table now shows only Top 10 customers.
+- Filtered on a **measure**:
+  - Added `[Total Sales]` to Filters on this visual.
+  - Only showed rows where `[Total Sales]` is greater than a chosen threshold.
+
+#### What I learned
+- **Visual-level filters** affect only one visual.
+- **Page-level filters** affect all visuals on that page.
+- **Report-level filters** affect all pages in the report (use with care).
+- **Top N filters** are useful to focus on best-performing items (e.g. Top 10 customers).
+- Measures like `[Total Sales]` can be used in filters to show only high-value results (e.g. Sales > 10.000).
+
+---
+
