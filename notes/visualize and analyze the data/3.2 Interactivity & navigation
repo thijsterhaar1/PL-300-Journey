@@ -58,3 +58,34 @@
 
 ---
 
+### Step 3 – Use bookmarks for custom views
+
+#### What I did in Power BI
+- Turned on:
+  - Bookmarks pane
+  - Selection pane
+- Created two bookmarks on the same page:
+  1. **Overview**
+     - Default slicers (no filters)
+     - Only overview visuals visible
+  2. **Customer focus**
+     - Specific slicer selections (e.g. Year + Category)
+     - Customer table visible, some other visuals hidden
+- Verified bookmark settings:
+  - Data = On
+  - Display = On
+  - Current page = On
+- Tested switching between bookmarks.
+- Added two buttons and linked each to a bookmark:
+  - Button "Overview" → Bookmark Overview
+  - Button "Customer focus" → Bookmark Customer focus
+- Page now behaves like a simple app with view toggles.
+
+#### What I learned
+- Bookmarks save the current state of a report page (filters, slicers, and visual visibility).
+- **Data bookmarks** capture filter/slicer context.
+- **Display bookmarks** capture layout/visibility changes.
+- Buttons can trigger bookmarks to create guided navigation or custom views.
+
+---
+
