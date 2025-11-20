@@ -151,7 +151,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 - [X] Create drillthrough pages
 - [X] Add tooltips for extra info
 - [X] Use bookmarks for custom views
-- [ ] Add buttons for navigation (home/back/report sections)
+- [X] Add buttons for navigation (home/back/report sections)
 - [ ] Build a simple multi-page report that feels like a small app
 
 ### 3.3 Format & make it readable
