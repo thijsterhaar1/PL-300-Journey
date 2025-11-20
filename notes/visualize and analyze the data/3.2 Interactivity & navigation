@@ -89,3 +89,27 @@
 
 ---
 
+### Step 4 – Add buttons for navigation
+
+#### What I did in Power BI
+- Added navigation buttons to create an app-like report.
+- **Home button**:
+  - Inserted a blank button.
+  - Action = Page navigation → Destination = Home/Overview page.
+- **Back button**:
+  - Inserted a Back button.
+  - Action type = Back (returns to previous page).
+- **Section buttons**:
+  - Created buttons for main sections:
+    - "Visuals (3.1)" → navigates to a 3.1 page.
+    - "Interactivity (3.2)" → navigates to a 3.2 page.
+- (Optional) Built a consistent header bar and copied it to all pages.
+- Tested all buttons to confirm correct navigation.
+
+#### What I learned
+- Buttons with Page navigation guide users through a report.
+- Back buttons improve usability by letting users return without hunting pages.
+- A consistent header with section buttons makes the report feel like a small app.
+
+---
+
