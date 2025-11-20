@@ -26,3 +26,35 @@
 
 ---
 
+### Step 3.2.2 – Add tooltips for extra info
+
+#### What I did in Power BI
+- Enhanced standard tooltips:
+  - On the "Sales by Region" chart I added extra fields to the Tooltip well:
+    - `[Order Count]`
+    - `Quantity`
+  - Hovering a bar now shows Total Sales + extra metrics.
+- Created a **report page tooltip**:
+  - New page: `Tooltip – Category`.
+  - Page settings:
+    - Tooltip = On
+    - Canvas type = Tooltip
+  - Added visuals:
+    - Card with `[Total Sales]` for the selected category.
+    - Table with `Subcategory` (or `ProductName`) and `[Total Sales]`.
+  - Added `dim_product[Category]` to **Tooltip fields**.
+- Linked the tooltip to a Category visual:
+  - On a bar/donut chart with `dim_product[Category]`:
+    - Tooltip = On
+    - Type = Report page
+    - Page = `Tooltip – Category`.
+  - Hovering a category now shows a detailed tooltip page.
+
+#### What I learned
+- Extra fields in the Tooltip well give more context per data point (e.g. Order Count, Quantity).
+- Report page tooltips are mini-report pages that appear on hover.
+- Tooltip fields define which column (e.g. Category) controls the context for the tooltip.
+- Report page tooltips help keep the main page clean while still offering detailed info on hover.
+
+---
+
