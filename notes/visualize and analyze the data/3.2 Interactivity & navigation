@@ -113,3 +113,26 @@
 
 ---
 
+### Step 5 – Build a multi-page report that feels like a small app
+
+#### What I did in Power BI
+- Organized the report into a simple app flow:
+  - Home
+  - Visuals section
+  - Interactivity section
+  - Region detail (drillthrough)
+- Built a consistent header on every page:
+  - Rectangle header + buttons (Home, Visuals, Interactivity)
+  - Buttons use Page navigation actions.
+- Added a Back button on the Region detail page.
+- (Optional) Used bookmarks as tab-like views on the Visuals page.
+- Synced key slicers (e.g., Year, Category) across pages using Sync slicers pane.
+- Hid technical/practice pages to keep navigation clean.
+- Tested full user flow: Home → sections → drillthrough → back.
+
+#### What I learned
+- A multi-page report feels like an app when navigation is consistent and guided.
+- Headers + buttons provide clear structure (home/sections/details).
+- Drillthrough adds detail without cluttering overview pages.
+- Synced slicers create a consistent experience across pages.
+- Hidden pages keep the UI simple while retaining functionality.
