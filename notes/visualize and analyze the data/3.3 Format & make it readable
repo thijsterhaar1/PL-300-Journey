@@ -1,1 +1,25 @@
+### Step 1 – Use consistent colors and fonts
+
+#### What I did in Power BI
+- Applied a report theme via View → Themes.
+- Customized the current theme:
+  - Set one font family for the whole report.
+  - Chose one main accent color and kept other colors neutral.
+- Standardized visual formatting across pages:
+  - Titles on all visuals with consistent font size and naming style.
+  - Consistent axis/label font sizes.
+  - Consistent number formatting (currency for sales, no decimals for counts).
+- Standardized KPI cards:
+  - Same title/value sizes, background and borders.
+  - Aligned and evenly distributed cards.
+- Cleaned layout:
+  - Used gridlines and snap-to-grid.
+  - Aligned visuals and kept spacing consistent.
+
+#### What I learned
+- Themes enforce a consistent visual style quickly.
+- Consistent fonts and colors improve readability and professionalism.
+- Aligning and spacing visuals makes the report feel like one cohesive app.
+
+---
 
