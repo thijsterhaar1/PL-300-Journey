@@ -10,3 +10,17 @@ What I learned:
 
 ---
 
+### Step 2 – Quick measures
+
+- Created quick measures via Modeling → Quick measure:
+  - Running total of [Total Sales] using dim_date[Date]
+  - Percent of grand total for [Total Sales] by Category (or Region)
+- Tested them in visuals (line chart for running total, bar chart for % of total).
+
+What I learned:
+- Quick measures generate standard DAX patterns automatically.
+- They are normal measures: you can open and edit the DAX afterwards.
+- Useful for learning common calculation patterns quickly.
+
+---
+
