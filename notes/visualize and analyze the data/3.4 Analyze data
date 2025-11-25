@@ -1,1 +1,12 @@
+### Step 1 – Analyze (Explain increase/decrease)
+
+- Created a line/column chart with Date on X-axis and [Total Sales] (or [Total Sales YTD]) on Y-axis.
+- Used right-click on a data point → Analyze → Explain the increase/decrease.
+- Reviewed the generated explanation (key drivers/segments) and added it to the report (if available).
+
+What I learned:
+- Explain increase/decrease is available only for certain visuals/fields.
+- It helps identify which dimensions (e.g., Region/Category/Customer) likely drove the change.
+
+---
 
