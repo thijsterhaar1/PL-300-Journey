@@ -54,3 +54,12 @@
 
 ---
 
+### Step 4 – Sort by other columns
+
+- Sorted `dim_date[MonthName]` by `dim_date[MonthNumber]` to ensure months display in correct order.
+- (Optional) Created `YearMonth` and `YearMonthSort` to support correct sorting across multiple years.
+- Sorted charts using visual sort options (e.g., Total Sales descending).
+- Sorted tables by Total Sales to show top customers first.
+
+---
+
