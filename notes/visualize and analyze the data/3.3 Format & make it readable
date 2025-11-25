@@ -43,3 +43,14 @@
 
 ---
 
+### Step 3 – Conditional formatting
+
+- Added data bars to Total Sales in a table/matrix to highlight high/low values.
+- Created variance measures (Sales Var, Sales Var %) to compare this year vs last year.
+- Applied rule-based formatting:
+  - Green for positive variance, red for negative.
+- Added icons (up/down) for quick interpretation.
+- Used Data colors (fx) on a chart to color bars based on rules.
+
+---
+
