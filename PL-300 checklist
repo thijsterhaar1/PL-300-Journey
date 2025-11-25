@@ -160,7 +160,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 - [X] Rename visuals and fields so they are clear to the user
 - [X] Use conditional formatting (e.g. color by value)
 - [X] Sort by other columns when needed (e.g. months in correct order)
-- [ ] Add titles, labels, and descriptions where needed
+- [X] Add titles, labels, and descriptions where needed
 
 ### 3.4 Analyze data
 
