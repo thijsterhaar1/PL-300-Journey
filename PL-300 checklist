@@ -157,8 +157,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 ### 3.3 Format & make it readable
 
 - [X] Use consistent colors and fonts
-- [ ] Rename visuals and fields so they are clear to the user
-- [ ] Use conditional formatting (e.g. color by value)
+- [X] Rename visuals and fields so they are clear to the user
+- [X] Use conditional formatting (e.g. color by value)
 - [ ] Sort by other columns when needed (e.g. months in correct order)
 - [ ] Add titles, labels, and descriptions where needed
 
