@@ -164,8 +164,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 3.4 Analyze data
 
-- [ ] Use “Analyze” features (Explain increase/decrease, where available)
-- [ ] Add quick measures (high-level understanding)
+- [X] Use “Analyze” features (Explain increase/decrease, where available)
+- [X] Add quick measures (high-level understanding)
 - [ ] Answer concrete business questions with your report
   (e.g. best customers, worst region, trend over time)
 
