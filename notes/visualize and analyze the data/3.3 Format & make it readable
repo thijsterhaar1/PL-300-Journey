@@ -63,3 +63,10 @@
 
 ---
 
+### Step 5 – Titles, labels, and descriptions
+
+- Added clear titles to key visuals (General → Title).
+- Added axis titles (X-axis/Y-axis) and legend titles where applicable.
+- Enabled data labels where readability improves (e.g., bar charts).
+- Added short explanatory text boxes on pages to guide users (how to use slicers, drillthrough, tooltips).
+- (Optional) Added an info button with a tooltip for extra context.
