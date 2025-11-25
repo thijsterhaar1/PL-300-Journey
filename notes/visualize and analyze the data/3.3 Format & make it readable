@@ -23,3 +23,23 @@
 
 ---
 
+### Step 2 – Rename visuals and fields
+
+#### What I did in Power BI
+- Updated visual titles across pages to be user-friendly and consistent:
+  - e.g. "Total Sales by Month", "Total Sales by Region", "Top Customers", "Sales Trend".
+- Renamed fields *for specific visuals* (without changing the model):
+  - Customer Label → Customer
+  - Total Sales → Total Sales (€)
+  - Order Count → Orders
+  - Sum of Quantity → Quantity
+- Checked axis and legend titles to match the same naming style.
+- (Optional) Renamed a few measures in the model where needed.
+
+#### What I learned
+- Clear titles and field names reduce confusion for end users.
+- “Rename for this visual” is safer than renaming the model.
+- Consistent naming style makes the report feel professional and easy to scan.
+
+---
+
