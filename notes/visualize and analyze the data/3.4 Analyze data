@@ -24,3 +24,11 @@ What I learned:
 
 ---
 
+### Step 3 – Answer business questions with the report
+
+- Built a “Business Q&A” page with visuals that answer common questions:
+  - Best customers: Top N table/bar chart by [Total Sales] (Top 5).
+  - Worst region: bar chart by Region with [Total Sales] and sorting.
+  - Trend over time: line chart with Date/YearMonth and [Total Sales] (or YTD).
+- Added slicers (Year, Category, Region) to let users explore the answers interactively.
+- Added a short text summary with the key findings.
