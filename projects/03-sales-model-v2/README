@@ -1,0 +1,69 @@
+# Project 3 — Sales Dashboard v2 (Insights)
+
+Klein Power BI project om een **verrijkte versie van het Sales Model v1** te maken.  
+Focus op **visuele inzichten**, **interactiviteit** en het beantwoorden van concrete *businessvragen*.
+
+## Doel
+
+Verder bouwen op *Project 2 — Sales Model v1* door:
+
+- Extra KPI’s en DAX-measures toe te voegen.
+- Dashboard interactiever te maken met slicers, drilldown, drillthrough en tooltips.
+- Diepere inzichten te tonen, zoals beste maand, klant, categorie en regio.
+
+> **Doel:** één overzichtelijk *Insights Dashboard* dat direct antwoord geeft op de belangrijkste performancevragen.
+
+---
+
+## Businessvragen
+
+Het **Sales Dashboard v2** moet antwoord geven op de volgende vragen:
+
+1. **Beste periode**
+   - Wat is de beste maand (en jaar) qua omzet?
+   - Hoe ontwikkelt de omzet over tijd (trend)?
+
+2. **Beste klanten**
+   - Wie zijn de **top 5 klanten** op basis van Total Sales?
+
+3. **Productcategorie & regio**
+   - Welke **categorieën** leveren de meeste omzet?
+   - Hoe verschillen deze prestaties per **regio/store**?
+
+4. **Segment-prestatie**
+   - Welk **klantsegment** is het meest waardevol?
+   - Wat is de **gemiddelde orderwaarde per segment**?
+
+5. **Regionale performance**
+   - Welke **store/region** presteert onder of boven het gemiddelde?
+
+6. **Ordergedrag**
+   - Wat is de **gemiddelde orderwaarde** en hoe ontwikkelt deze zich over tijd?
+
+---
+
+## KPI’s (dashboard basis)
+
+| Measure                         | Beschrijving |
+|--------------------------------|--------------|
+| **Total Sales**                | Totaal omzetbedrag |
+| **Order Count**                | Aantal orders |
+| **Total Quantity**             | Aantal verkochte items |
+| **Average Sales per Order**    | Total Sales / Order Count |
+| **Average Quantity per Order** | Gemiddelde item-afname per order |
+| **Sales per Customer**         | (Top klanten) |
+| **Sales per Category**         | (Inzicht productprestaties) |
+| **Sales per Region/Store**     | (Regionale vergelijking) |
+
+---
+
+## Volgende stappen
+
+1. **Model & DAX uitbreiden** → nieuwe measures toevoegen.
+2. **Dashboard-layout ontwerpen** → positie visuals / slicers bepalen.
+3. **Visuals bouwen en optimaliseren**.
+4. Interactiviteit toepassen (drilldown, drillthrough, tooltips).
+5. Validatie en finetuning.
+
+---
+
