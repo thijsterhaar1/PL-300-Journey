@@ -9,7 +9,7 @@ Use it to track what you’ve really *mastered*, not just watched once 😉
 
 - [X] I can load data into Power BI and clean it on my own
 - [X] I can build a proper data model with relationships and DAX measures
-- [ ] I can create clear, interactive reports that answer business questions
+- [X] I can create clear, interactive reports that answer business questions
 - [ ] I understand the basics of Power BI Service, sharing, and security
 - [ ] I feel ready to do a full practice exam without looking things up
 
@@ -166,7 +166,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 - [X] Use “Analyze” features (Explain increase/decrease, where available)
 - [X] Add quick measures (high-level understanding)
-- [ ] Answer concrete business questions with your report
+- [X] Answer concrete business questions with your report
   (e.g. best customers, worst region, trend over time)
 
 ---
