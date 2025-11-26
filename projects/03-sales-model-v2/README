@@ -1,44 +1,45 @@
 # Project 3 — Sales Dashboard v2 (Insights)
 
-Klein Power BI project om een **verrijkte versie van het Sales Model v1** te maken.  
-Focus op **visuele inzichten**, **interactiviteit** en het beantwoorden van concrete *businessvragen*.
+Klein Power BI project waarin de **Sales Model v1** uit Project 2 wordt uitgebreid met:
+- Meer inzichtelijke measures,
+- Interactiviteit (slicers, drilldown, drillthrough, tooltips),
+- Focus op analyse en storytelling i.p.v. alleen rapportage.
 
 ## Doel
 
-Verder bouwen op *Project 2 — Sales Model v1* door:
+De bedoeling is om een *Insights Dashboard* te creëren dat antwoord geeft op belangrijke performancevragen op basis van het salesmodel.  
+**Let op:** de dataset bevat een beperkt aantal klanten, categorieën en slechts één tijdsperiode (2024). Hierdoor zijn de inzichten beperkt in zakelijke waarde, maar het project richt zich met name op de **technische opbouw, analyse-logica en dashboardvaardigheden**.
 
-- Extra KPI’s en DAX-measures toe te voegen.
-- Dashboard interactiever te maken met slicers, drilldown, drillthrough en tooltips.
-- Diepere inzichten te tonen, zoals beste maand, klant, categorie en regio.
-
-> **Doel:** één overzichtelijk *Insights Dashboard* dat direct antwoord geeft op de belangrijkste performancevragen.
+> **Doel:** technisch laten zien hoe je van een basisdashboard naar een insightsdashboard gaat.
 
 ---
 
-## Businessvragen
+## Businessvragen (binnen dataset-scope)
 
-Het **Sales Dashboard v2** moet antwoord geven op de volgende vragen:
+Het *Sales Dashboard v2* moet antwoord geven op de volgende vragen:
 
-1. **Beste periode**
-   - Wat is de beste maand (en jaar) qua omzet?
-   - Hoe ontwikkelt de omzet over tijd (trend)?
+1. **Beste periode (binnen 2024)**
+   - Welke maand had de hoogste omzet?
+   - Hoe ontwikkelt de omzet over tijd?
 
 2. **Beste klanten**
-   - Wie zijn de **top 5 klanten** op basis van Total Sales?
+   - Welke klanten realiseren de meeste omzet?  
+     (*Top N, aangezien het aantal klanten beperkt is.*)
 
-3. **Productcategorie & regio**
-   - Welke **categorieën** leveren de meeste omzet?
-   - Hoe verschillen deze prestaties per **regio/store**?
+3. **Productcategorie-analyse**
+   - Welke categorie levert de meeste omzet?
 
 4. **Segment-prestatie**
-   - Welk **klantsegment** is het meest waardevol?
-   - Wat is de **gemiddelde orderwaarde per segment**?
+   - Welk klantsegment is het meest waardevol?
+   - Hoeveel is de gemiddelde orderwaarde per segment?
 
-5. **Regionale performance**
-   - Welke **store/region** presteert onder of boven het gemiddelde?
+5. **Regionale prestatie**
+   - Hoe presteert de store/region binnen de dataset?
 
 6. **Ordergedrag**
-   - Wat is de **gemiddelde orderwaarde** en hoe ontwikkelt deze zich over tijd?
+   - Wat is de gemiddelde orderwaarde?
+
+> Omdat de dataset klein is, ligt de nadruk op het technisch beantwoorden van deze vragen via visuals, DAX-measures en interacties, in plaats van op diepgaande zakelijke inzichten.
 
 ---
 
@@ -46,24 +47,39 @@ Het **Sales Dashboard v2** moet antwoord geven op de volgende vragen:
 
 | Measure                         | Beschrijving |
 |--------------------------------|--------------|
-| **Total Sales**                | Totaal omzetbedrag |
+| **Total Sales**                | Totale omzet |
 | **Order Count**                | Aantal orders |
-| **Total Quantity**             | Aantal verkochte items |
+| **Total Quantity**             | Verkochte items |
 | **Average Sales per Order**    | Total Sales / Order Count |
-| **Average Quantity per Order** | Gemiddelde item-afname per order |
-| **Sales per Customer**         | (Top klanten) |
-| **Sales per Category**         | (Inzicht productprestaties) |
-| **Sales per Region/Store**     | (Regionale vergelijking) |
+| **Average Quantity per Order** | Aantal items per order |
+| **Sales per Customer**         | Voor analyse van klantprestaties |
+| **Sales per Category**         | Voor categorieanalyse |
+| **Sales % of Total**           | Relatieve bijdrage aan omzet |
+| **Region vs Avg %**            | Regioprestatie t.o.v. gemiddelde |
 
 ---
 
-## Volgende stappen
+## Opbouwstappen
 
-1. **Model & DAX uitbreiden** → nieuwe measures toevoegen.
-2. **Dashboard-layout ontwerpen** → positie visuals / slicers bepalen.
-3. **Visuals bouwen en optimaliseren**.
-4. Interactiviteit toepassen (drilldown, drillthrough, tooltips).
-5. Validatie en finetuning.
+1. **Model checken & datumlogica uitbreiden**  
+2. **Nieuwe DAX-measures maken op basis van businessvragen**  
+3. **Dashboard-layout ontwerpen (KPI-zone, visuals, slicers)**  
+4. **Interactiviteit toevoegen (drilldown, drillthrough, tooltips)**  
+5. **Validatie & finetuning**  
+6. Documenteren wat technisch is geleerd
 
 ---
+
+## Learnings (te verwachten)
+
+- Hoe je van rapportage naar inzicht-sturing gaat.
+- Structureren van KPI’s op basis van businessvragen.
+- Werken met measures zoals *% of Total*, benchmarkanalyse en Top N.
+- Technische toepassing van interactiviteit (filters, drilldown, tooltips).
+- Kritisch omgaan met de beperktheid van data.
+
+> *Omdat de dataset klein is, verschuift de focus van “businesswaarde” naar “technische opbouw” en het correct toepassen van analyseconcepten.*
+
+---
+
 
