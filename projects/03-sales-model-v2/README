@@ -1,74 +1,88 @@
 # Project 3 — Sales Dashboard v2 (Insights)
 
-Klein Power BI project waarin het **Sales Model v1** uit Project 2 wordt uitgebreid met interactieve analysefunctionaliteiten.  
-Focus op **inzicht** in plaats van alleen rapportage.
-
-## Doel
-
-Van een basisdashboard (Project 2) naar een **Insights Dashboard**, met:
-- Extra KPI’s en analyse-measures,
-- Visuele inzichten (trends & verdeling),
-- Interactiviteit (slicers, drilldown, drillthrough, tooltips).
-
-> **Van data tonen → data begrijpen.**
-
-**Let op:** de dataset omvat slechts een kleine periode (10 dagen in januari 2024) met beperkte klanten, categorieën en winkels.  
-Daarom ligt de nadruk op de **technische uitvoering** van een insights-dashboard, niet op diepgaande zakelijke conclusies.
+Klein Power BI project waarin het **Sales Model v1** (Project 2) wordt uitgebreid tot een volledig **Insights Dashboard**.  
+Focus ligt op **inzicht, KPI-sturing en interactiviteit**, in plaats van alleen rapportage.
 
 ---
 
-## Businessvragen (binnen scope dataset)
+## 📌 Dataset
+
+Voor dit project is een demonstratieve dataset gebruikt:
+
+- **Periode:** 10 dagen in januari 2024  
+- **Tabelstructuur (star schema):**
+  - `fact_sales`
+  - `dim_customer`
+  - `dim_product`
+  - `dim_store`
+  - `dim_date`
+- Relaties: *1:* → fact, **Single direction**
+- Dataset is beperkt, daardoor ligt de nadruk op de technische bouw van het dashboard
+
+> *“Vanwege de beperkte dataset (10 dagen) ligt de focus op technische uitvoering i.p.v. diepgaande zakelijke analyses.”*
+
+---
+
+## 🎯 Businessvragen (in scope van dataset)
 
 1. **Beste dag**
-   - Welke **dag** had de hoogste omzet?
+   - Welke dag had de hoogste omzet?
    - Hoe ontwikkelt de omzet gedurende de beschikbare dagen?
 
-2. **Beste klanten**
-   - Welke klanten realiseren de meeste omzet? (*Top N, aangezien dataset klein is*)
+2. Beste klanten
+   - Wie zijn de top 5 klanten qua omzet?
 
-3. **Productcategorie-analyse**
+3. Productcategorieanalyse
    - Welke categorie presteert het best?
 
-4. **Segment-prestatie**
-   - Welk klantsegment is het meest waardevol?
+4. Segmentprestatie
+   - Welk klantsegment genereert de meeste omzet?
    - Wat is de gemiddelde orderwaarde per segment?
 
-5. **Regionale prestatie**
-   - Hoe presteert de store/region?
-   - Technisch: vergelijken t.o.v. gemiddelde omzet
+5. Regionale prestatie
+   - Hoe presteert een store t.o.v. het gemiddelde?
 
-6. **Ordergedrag**
-   - Wat is de gemiddelde orderwaarde?
-
-> *Technische focus: berekeningen, visualisatie & interactiviteit — ondanks beperkte dataset.*
+6. Ordergedrag
+   - Wat is de gemiddelde omzet per order?
 
 ---
 
-## Belangrijkste KPI-measures
+## 📊 KPI’s gebouwd
 
-| Measure                         | Beschrijving |
-|--------------------------------|--------------|
-| Total Sales                    | Totale omzet |
-| Order Count                    | Aantal orders |
-| Total Quantity                 | Verkochte items |
-| Average Sales per Order        | Total Sales / Order Count |
-| Average Quantity per Order     | Items per order |
-| Sales % of Total               | Relatieve bijdrage aan omzet |
-| Best Day                      | Dag met hoogste omzet |
-| Sales on Best Day             | Omzet op de beste dag |
-| Region vs Avg (%)             | Vergelijking t.o.v. gemiddelde regio |
-
----
-
-## Verwachte learnings
-
-- Bouwen van een insights-dashboard vanuit een basisrapport
-- Vertalen van businessvragen naar DAX
-- Interactieve dashboard-constructie (slicers, tooltips, drill)
-- Benchmarking / relatieve vergelijkingen
-- Omgaan met beperkingen van data
-
-> Ook al beperkte dataset → project blijft technisch waardevol.
+| Measure | Omschrijving |
+|--------|---------------|
+| Total Sales | Totaal omzetbedrag |
+| Order Count | Aantal orders |
+| Total Quantity | Verkochte items |
+| Average Sales per Order | Sales / Orders |
+| Best Day | Dag met hoogste omzet |
+| Sales on Best Day | Omzet op de beste dag |
+| Sales % of Total | Relatieve bijdrage |
+| Avg Sales All Stores | Benchmark voor regioprestatie |
+| Region vs Avg / % | Verschil tot gemiddelde omzet |
 
 ---
 
+## 🔧 Modeling steps
+
+1. **Relaties gecontroleerd** (1:\* vanuit dims → fact)
+2. `dim_date` als **Date table** ingesteld (op kolom `Date`)
+3. **Measures verplaatst naar `_Measures`-tabel**
+4. **Nieuwe DAX-measures ontwikkeld** op basis van businessvragen
+5. **Geen YearMonth** gebruikt → analyse op dag-niveau
+
+---
+
+## 📐 Dashboard-structuur
+
+```text
+Sales Insights Dashboard
+┌──────────────────────────────────────────────┐
+│ KPI-zone (cards) – Total Sales, Orders, Avg, │
+│ Best Day, Sales on Best Day                  │
+├───────────────┬──────────────────────────────┤
+│ Slicers       │ Top customers (bar)          │
+│ - Date        │ Sales per day (line)         │
+│ - Customer    │ Sales by category (column)   │
+│ - Category    │ Region performance (table)   │
+└───────────────┴──────────────────────────────┘
