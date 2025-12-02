@@ -1,1 +1,28 @@
+### Step 1 – Publish a report to Power BI Service
+
+#### What I did in Power BI
+- Logged into Power BI Desktop and Service with my org account  
+  (`...@TerhaarAnalytics.onmicrosoft.com`).
+- Opened my Project 2 report PBIX.
+- Clicked **Home → Publish** and selected **My workspace**.
+- In Power BI Service (app.powerbi.com), verified that:
+  - A **Report** appeared with the PBIX name.
+  - A **Semantic model (dataset)** appeared with the same name.
+- Opened the report in the Service and tested slicers/filters.
+- Changed a visual title in Desktop and published again.
+- Confirmed that the report in the Service updated after republish.
+
+#### What I learned
+- Power BI Service is the cloud environment for hosting reports,
+  dashboards, workspaces and semantic models.
+- Publishing from Desktop sends **two artefacts**:
+  - the **report** (visuals + layout),
+  - the **semantic model/dataset** (data model + queries).
+- A publish with the same name **overwrites** the existing report and
+  updates the dataset in that workspace.
+- Desktop = build & model; Service = share, manage, secure, and monitor.
+- I must be logged in with my **org account** in both Desktop & Service
+  to publish successfully.
+
+---
 
