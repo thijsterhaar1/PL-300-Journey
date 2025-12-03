@@ -1,1 +1,16 @@
+### Step 1 – Create roles in Power BI Desktop
+
+#### What I did
+- Opened the Model view and selected **Manage roles**.
+- Created a new role (example: *Region West*).
+- Added a DAX filter on the dimension table:
+  `[Region] = "West"`.
+- Saved the role.
+
+#### Key points
+- RLS filters are usually applied on **dimension tables**, not the fact table.
+- Each role contains one or more DAX filters.
+- You can create multiple roles for different regions or departments.
+
+---
 
