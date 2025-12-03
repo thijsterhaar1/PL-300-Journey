@@ -54,3 +54,24 @@
 
 ---
 
+### Step 3 – Pin visuals to a dashboard
+
+#### What I did in Power BI Service
+- Opened my report in the **PL300 – Practice Workspace**.
+- Pinned a bar chart to a **new dashboard** named “Practice Dashboard”.
+- Adjusted tile size and position.
+- Pinned additional visuals (line chart, KPI) to the **existing dashboard**.
+- Observed that tiles link back to the original report when clicked.
+- Created a second dashboard to understand that a workspace can contain multiple dashboards.
+
+#### What I learned
+- Dashboards exist **only** in Power BI Service (not in Desktop).
+- A dashboard is a **single-page layout** made of “tiles”.
+- Pinning a visual creates a **tile** on a dashboard.
+- A tile can be “live” or a snapshot depending on visual type.
+- Dashboards can combine visuals from different reports and datasets.
+- Clicking a tile takes you back to the source report.
+- A workspace can contain many dashboards, but only one app.
+
+---
+
