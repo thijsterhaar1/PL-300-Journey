@@ -52,3 +52,21 @@
 
 ---
 
+### Step 4 – Publish with RLS and assign users in the Service
+
+#### What I did
+- Published my PBIX with RLS roles to my workspace.
+- Opened the dataset → clicked **Security**.
+- Assigned users (or my own account) to each RLS role.
+- Used **Test as role** to confirm the RLS behavior in the Service.
+
+#### What I learned
+- RLS only becomes active in the Power BI Service.
+- Users must be explicitly assigned to a role, otherwise they see all data.
+- Testing in the Service (Test as role) validates that RLS works after publishing.
+- RLS is defined in Desktop but *enforced* in the Service.
+
+#### Key notes
+- RLS is tied to the **dataset**, not the report.
+- Publishing overwrites roles defined in previous versions.
+- If using a workspace with limited licenses, users may need Pro access to view RLS-protected content.
