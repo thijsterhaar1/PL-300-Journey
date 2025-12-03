@@ -1,53 +1,22 @@
-### Step 1 – Share a report or dashboard
+## Step 1 – Share a report or dashboard (High level)
 
-#### What I did
+### What I did
 - Opened a report in my **PL300 – Practice Workspace**.
 - Clicked **Share** in the Power BI Service.
-- Entered a (test) email address to share with.
-- Reviewed options:
-  - Can view
-  - Allow recipients to reshare
-  - Send email notification.
-- Observed that sharing is always done from the Service, not from Desktop.
+- Entered a test email address.
+- Reviewed sharing options:
+  - Can view  
+  - Allow recipients to reshare  
+  - Send email notification
+- Noted that sharing only works from the Power BI Service, not Desktop.
 
-#### What I learned
-- Sharing happens in the Power BI Service using the **Share** button on
-  a report or dashboard.
-- Recipients need:
-  - Permission to the underlying report/dataset
-  - A Power BI Pro license (unless content is in a Premium capacity).
-- I can control:
-  - Who can view the report
-  - Whether recipients can reshare
-  - Whether a share email is sent.
-- Workspaces and apps are often a better way to distribute content to
-  larger groups than individual shares.
+### What I learned
+- Sharing gives another user **view access** to a report or dashboard.
+- Recipients must be in the same tenant and have a **Power BI Pro license** (unless using Premium).
+- Sharing provides **view-only** access — no editing.
+- Sharing works well for small audiences; for larger groups, use **workspaces or apps** instead.
 
 ---
 
-### Step 2 – Manage permissions
 
-#### What I did
-- Opened a report → Share → Manage permissions.
-- Viewed:
-  - Direct access (users I shared with),
-  - Links (shareable links),
-  - Workspace access (roles: Viewer/Member/Contributor/Admin).
-- Practiced removing and modifying permissions.
-- Checked permissions of the dataset (semantic model) via:
-  Workspace → … → Manage permissions.
-
-#### What I learned
-- A user can gain report access through:
-  - direct share,
-  - workspace role,
-  - app access.
-- You cannot remove a user that has access via the workspace (only from direct share).
-- Dataset permissions are separate from report permissions.
-- Permissions can be:
-  - Can view
-  - Can reshare (if enabled)
-  - Workspace roles that give broader rights
-
----
 
