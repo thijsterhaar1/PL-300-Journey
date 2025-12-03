@@ -194,8 +194,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 ### 4.3 Row-Level Security (RLS)
 
 - [X] Create roles in Power BI Desktop
-- [ ] Define DAX filters for RLS (e.g. `[Region] = "West"`)
-- [ ] Test roles with “View as role”
+- [X] Define DAX filters for RLS (e.g. `[Region] = "West"`)
+- [X] Test roles with “View as role”
 - [ ] Publish with RLS and assign users to roles in the Service
 
 ### 4.4 Sharing & permissions
