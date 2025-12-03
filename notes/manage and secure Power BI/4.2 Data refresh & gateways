@@ -1,1 +1,35 @@
+### Step 1 – Understand scheduled refresh
+
+#### What I learned
+- Scheduled refresh automatically updates the data in a semantic model based on a defined schedule.
+- It requires:
+  - valid data source credentials,
+  - accessible data source,
+  - (sometimes) a gateway for on-premises sources.
+- Power BI Pro allows up to 8 scheduled refreshes per day.
+- Power BI Premium allows up to 48 scheduled refreshes per day.
+- Scheduled refresh does not work for local files unless a gateway is installed.
+- The refresh history logs the outcomes of both scheduled and manual refreshes.
+
+#### What I did in Power BI Service
+- Opened dataset settings via Workspace → … → Settings.
+- Viewed the Scheduled refresh section.
+- Verified that my dataset cannot refresh because it uses a local file source.
+
+---
+
+### Step 2 – Know what a gateway is
+
+#### What I learned
+- A Power BI gateway connects on-premises (local) data sources to the Power BI Service.
+- It is required when the Service cannot directly access the source, such as Excel/CSV files on my computer or an on-prem SQL Server.
+- The gateway runs on Windows and acts as a secure bridge that retrieves data and sends it to the cloud.
+- Without a gateway, manual and scheduled refreshes will fail for local data.
+- Cloud sources (SharePoint, OneDrive, Azure SQL, etc.) do not require a gateway.
+
+#### Observations in my workspace
+- My dataset cannot refresh because it uses a local file.
+- In the dataset settings, the Gateway connection section shows: “Not configured.”
+
+---
 
