@@ -36,3 +36,19 @@
 
 ---
 
+### Step 3 – Test roles with "View as role"
+
+#### What I did
+- Opened the report view in my RLS-enabled PBIX.
+- Used **Modeling → View as** to test RLS roles:
+  - Selected role *Region West* → report only showed Region = West.
+  - Selected role *Region West & East* → report showed only West and East.
+- Switched back to **Current** to see all data again.
+
+#### What I learned
+- RLS does not apply automatically in Desktop; I must use **View as** to simulate a role.
+- "View as" lets me verify that my DAX filters work as expected before publishing.
+- Each role can be tested separately to check which rows are visible.
+
+---
+
