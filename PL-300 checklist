@@ -200,7 +200,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 4.4 Sharing & permissions
 
-- [ ] Share a report/dashboard with a specific user (high level)
+- [X] Share a report/dashboard with a specific user (high level)
 - [ ] Know the difference between:
 - [ ] Viewer vs Member vs Contributor in a workspace (conceptually)
 - [ ] Understand basic licensing concepts (Pro vs Free – very high level)
