@@ -1,1 +1,27 @@
+### Step 1 – Share a report or dashboard
+
+#### What I did
+- Opened a report in my **PL300 – Practice Workspace**.
+- Clicked **Share** in the Power BI Service.
+- Entered a (test) email address to share with.
+- Reviewed options:
+  - Can view
+  - Allow recipients to reshare
+  - Send email notification.
+- Observed that sharing is always done from the Service, not from Desktop.
+
+#### What I learned
+- Sharing happens in the Power BI Service using the **Share** button on
+  a report or dashboard.
+- Recipients need:
+  - Permission to the underlying report/dataset
+  - A Power BI Pro license (unless content is in a Premium capacity).
+- I can control:
+  - Who can view the report
+  - Whether recipients can reshare
+  - Whether a share email is sent.
+- Workspaces and apps are often a better way to distribute content to
+  larger groups than individual shares.
+
+---
 
