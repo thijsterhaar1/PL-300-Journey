@@ -26,3 +26,31 @@
 
 ---
 
+### Step 2 – Understand Workspaces
+
+#### What I did in Power BI Service
+- Reviewed differences between **My workspace** and **App workspaces**.
+- Created a new workspace: **PL300 – Practice Workspace**.
+- Checked roles: Admin, Member, Contributor, Viewer.
+- Confirmed I am Workspace Admin.
+- Published my Project 2 report from Desktop to this workspace.
+- Verified that the **Report** and **Semantic model** appeared in the workspace.
+
+#### What I learned
+- **My workspace** is personal; not suitable for collaboration or production.
+- **App/Team workspaces** allow sharing, permissions, collaboration, refreshes, RLS testing and app creation.
+- Publishing sends both a **report** and **semantic model** to the selected workspace.
+- Workspaces are the foundation for:
+  - Sharing content
+  - Row-Level Security testing
+  - Data refresh setup
+  - Creating Power BI Apps
+  - Managing permissions
+- Workspace roles control what people can do:
+  - Viewer: view only  
+  - Contributor: add content  
+  - Member: edit and manage content  
+  - Admin: full control
+
+---
+
