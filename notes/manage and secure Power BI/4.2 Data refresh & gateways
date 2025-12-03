@@ -33,3 +33,23 @@
 
 ---
 
+### Step 3 – When do you need a gateway?
+
+#### When a gateway IS required
+- The data source is on-premises (local machine, network drive, on-prem SQL Server, Access, etc.).
+- Power BI Service cannot directly reach the source.
+- DirectQuery or scheduled refresh must access on-premises data.
+- My project files stored locally (Excel/CSV on my machine) require a gateway for refresh.
+
+#### When a gateway is NOT required
+- The data source is cloud-based:
+  - OneDrive / SharePoint Online
+  - Azure SQL Database
+  - Azure Synapse / Databricks
+  - Public OData feeds or web APIs
+- DirectQuery against cloud sources.
+- Live connections to cloud Analysis Services.
+
+#### Core understanding
+- A gateway acts as the secure bridge between on-premises data and the cloud.
+- Without a gateway, refresh fails for on-prem sources.
