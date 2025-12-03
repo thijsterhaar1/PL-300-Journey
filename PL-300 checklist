@@ -182,8 +182,8 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - [X] Reports
   - [X] Dashboards
   - [X] Apps (high-level)
-- [ ] Pin visuals to a dashboard
-- [ ] Refresh a dataset manually
+- [X] Pin visuals to a dashboard
+- [X] Refresh a dataset manually
 
 ### 4.2 Data refresh & gateways
 
