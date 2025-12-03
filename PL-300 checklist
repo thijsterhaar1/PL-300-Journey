@@ -176,12 +176,12 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 ### 4.1 Work with Power BI Service
 
 - [X] Publish a report from Power BI Desktop to Power BI Service
-- [ ] Understand:
-  - [ ] Workspaces
-  - [ ] Datasets
-  - [ ] Reports
-  - [ ] Dashboards
-  - [ ] Apps (high-level)
+- [X] Understand:
+  - [X] Workspaces
+  - [X] Datasets
+  - [X] Reports
+  - [X] Dashboards
+  - [X] Apps (high-level)
 - [ ] Pin visuals to a dashboard
 - [ ] Refresh a dataset manually
 
