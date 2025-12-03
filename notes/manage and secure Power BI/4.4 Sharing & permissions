@@ -25,3 +25,29 @@
 
 ---
 
+### Step 2 – Manage permissions
+
+#### What I did
+- Opened a report → Share → Manage permissions.
+- Viewed:
+  - Direct access (users I shared with),
+  - Links (shareable links),
+  - Workspace access (roles: Viewer/Member/Contributor/Admin).
+- Practiced removing and modifying permissions.
+- Checked permissions of the dataset (semantic model) via:
+  Workspace → … → Manage permissions.
+
+#### What I learned
+- A user can gain report access through:
+  - direct share,
+  - workspace role,
+  - app access.
+- You cannot remove a user that has access via the workspace (only from direct share).
+- Dataset permissions are separate from report permissions.
+- Permissions can be:
+  - Can view
+  - Can reshare (if enabled)
+  - Workspace roles that give broader rights
+
+---
+
