@@ -30,7 +30,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - Create a model with multiple tables (e.g. Sales, Customers, Products).
   - Add basic measures (`SUM`, `COUNT`, simple `CALCULATE`) and a few core visuals.
 
-- [ ] **Project 3 – Sales Dashboard v2 (Insights)**
+- [X] **Project 3 – Sales Dashboard v2 (Insights)**
   - Target timing: after you’ve covered *Visualize & analyze the data* basics.
   - Take Project 2 and upgrade it:
     - Add slicers, drillthrough, tooltips, cards/KPIs.
@@ -187,13 +187,13 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ### 4.2 Data refresh & gateways
 
-- [ ] Understand scheduled refresh (daily, hourly, etc.)
-- [ ] Know what a gateway is (on-premises data)
-- [ ] Know when you need a gateway (high-level concept)
+- [X] Understand scheduled refresh (daily, hourly, etc.)
+- [X] Know what a gateway is (on-premises data)
+- [X] Know when you need a gateway (high-level concept)
 
 ### 4.3 Row-Level Security (RLS)
 
-- [ ] Create roles in Power BI Desktop
+- [X] Create roles in Power BI Desktop
 - [ ] Define DAX filters for RLS (e.g. `[Region] = "West"`)
 - [ ] Test roles with “View as role”
 - [ ] Publish with RLS and assign users to roles in the Service
