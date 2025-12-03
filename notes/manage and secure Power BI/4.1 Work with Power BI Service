@@ -75,3 +75,20 @@
 
 ---
 
+### Step 4 – Refresh a dataset manually
+
+#### What I did in Power BI Service
+- Opened my workspace (PL300 – Practice Workspace).
+- Located the *Semantic model* (dataset) published from my PBIX file.
+- Used **… → Refresh now** to trigger a manual refresh.
+- Viewed the refresh status and logs in **Settings → Refresh history**.
+
+#### What I learned
+- Manual refresh reloads the data for the dataset in the Power BI Service.
+- Manual refresh is useful during development or testing.
+- Scheduled refresh (covered later) automates this process.
+- Refresh history shows:
+  - manual vs scheduled refreshes,
+  - success/failure logs,
+  - timestamps.
+- A dataset must have valid credentials and data source permissions for refresh to work.
