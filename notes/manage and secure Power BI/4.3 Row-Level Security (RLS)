@@ -14,3 +14,25 @@
 
 ---
 
+### Step 2 – Define DAX filters for RLS
+
+#### What I did
+- Opened **Manage roles** in Model view.
+- Edited existing role **Region West**:
+  `[Region] = "West"`.
+- Created role **Region West & East** with:
+  `[Region] IN { "West", "East" }` (or using OR).
+- Created role **Country NL** with:
+  `[Country] = "Netherlands"`.
+
+#### What I learned
+- RLS filters are simple DAX expressions that return TRUE/FALSE per row.
+- Filters are usually applied on **dimension tables** so they propagate to fact tables.
+- I can:
+  - filter on a single value (`=`),
+  - filter on multiple values (`OR` or `IN`),
+  - combine conditions on different columns.
+- Each role can have multiple table filters if needed.
+
+---
+
