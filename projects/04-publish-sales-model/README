@@ -1,0 +1,33 @@
+## Project 5 – Published Report with RLS
+
+### Goal
+- Take one of my existing reports.
+- Add Row-Level Security (RLS).
+- Publish to the Power BI Service and validate that RLS is enforced.
+
+### What I did
+- Chose my existing PBIX: `Project3_SalesModel_v2 (practice)`.
+- Designed a simple security model:
+  - Region-based roles (e.g. Region West, Region East) plus an All Regions manager role.
+- In Power BI Desktop:
+  - Created RLS roles in **Manage roles**:
+    - Region West: `[Region] = "West"`
+    - Region East: `[Region] = "East"`
+    - All Regions: `TRUE()`
+  - Tested each role using **Modeling → View as** to confirm filters worked.
+- Published the report and dataset to my **PL300 – Practice Workspace**.
+- In the Power BI Service:
+  - Opened the dataset → **Security**.
+  - Assigned my own account to the appropriate roles.
+  - Used **Test as role** to verify:
+    - Region West: only West data visible.
+    - Region East: only East data visible.
+    - All Regions: all data visible.
+
+### What I learned
+- RLS is defined in Desktop but enforced in the Service.
+- Roles must be carefully designed around business concepts (regions, countries, stores).
+- Testing RLS requires:
+  - **View as** in Desktop, and
+  - **Test as role** in the Service.
+- Even with only one real user account, I can fully validate RLS behavior using the built-in test tools.
