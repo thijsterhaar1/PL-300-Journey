@@ -45,4 +45,29 @@
 
 ---
 
+### Step 3 – Basic licensing (Pro vs Free)
+
+#### What I learned
+- **Power BI Free** users:
+  - Can use Power BI Desktop
+  - Can view content in *their own* My workspace
+  - Cannot share or receive shared content
+  - Cannot view content in workspaces (unless Premium capacity is used)
+
+- **Power BI Pro** users:
+  - Can publish to workspaces
+  - Can share reports and dashboards
+  - Can receive shared content
+  - Required for collaboration in *non-Premium* workspaces
+
+- **Power BI Premium**:
+  - Provides dedicated capacity for an organization
+  - Allows *Free* users to view shared content (read-only)
+  - Does not replace Pro for creators/contributors
+
+#### Key concepts
+- Sharing always requires **Pro on both sides**, unless the workspace is in **Premium capacity**.
+- Free users cannot collaborate in workspaces without Premium.
+- Pro = creator/collaborator license  
+  Free = consumer-only (unless Premium is enabled)
 
