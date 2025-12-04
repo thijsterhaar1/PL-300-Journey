@@ -18,5 +18,31 @@
 
 ---
 
+### Step 2 – Workspace roles (Viewer / Contributor / Member / Admin)
+
+#### What I learned
+- Workspace roles determine what users can do in a workspace.
+- **Viewer**:
+  - Can view reports, dashboards, apps
+  - Cannot edit, publish, or modify anything
+- **Contributor**:
+  - Can add and publish reports/datasets
+  - Can edit content
+  - Cannot manage workspace settings or permissions
+- **Member**:
+  - Can edit, publish, delete content
+  - Can share items
+  - Can update workspace settings (limited)
+- **Admin**:
+  - Full control over the workspace
+  - Can add/remove people, change roles, delete workspace
+
+#### Key points
+- Workspace roles are **different** from sharing (Share-button).  
+- Workspace access can override report-level restrictions.  
+- RLS still applies unless the user is Admin or has permission to edit the dataset.  
+- Workspace roles = best way to give structured access to teams.
+
+---
 
 
