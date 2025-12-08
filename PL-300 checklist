@@ -10,8 +10,8 @@ Use it to track what you’ve really *mastered*, not just watched once 😉
 - [X] I can load data into Power BI and clean it on my own
 - [X] I can build a proper data model with relationships and DAX measures
 - [X] I can create clear, interactive reports that answer business questions
-- [ ] I understand the basics of Power BI Service, sharing, and security
-- [ ] I feel ready to do a full practice exam without looking things up
+- [X] I understand the basics of Power BI Service, sharing, and security
+- [X] I feel ready to do a full practice exam without looking things up
 
 ---
 
@@ -41,7 +41,7 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
   - Use a different dataset (customers, marketing, operations… anything).
   - Focus on variety: matrix, line charts, conditional formatting, sorting, etc.
 
-- [ ] **Project 5 – Published Report with RLS**
+- [X] **Project 5 – Published Report with RLS**
   - Target timing: after you’ve studied *Manage & secure Power BI*.
   - Publish one of your existing projects to Power BI Service.
   - Set up Row-Level Security (RLS) and test with “View as role”.
@@ -208,10 +208,10 @@ Rough idea: after 1–2 study sessions on a topic → do a small project.
 
 ## 5. Exam readiness
 
-- [ ] I have read the official PL-300 skills outline at least once
+- [X] I have read the official PL-300 skills outline at least once
 - [ ] I have done at least one full practice assessment
 - [ ] I reviewed every wrong answer and know *why* it was wrong
-- [ ] I built at least 2–3 small end-to-end projects in Power BI (from data to report)
+- [X] I built at least 2–3 small end-to-end projects in Power BI (from data to report)
 - [ ] I am comfortable navigating the exam UI (question types, mark for review, etc.)
 - [ ] I can explain my model and reports as if I’m talking to a manager
 
